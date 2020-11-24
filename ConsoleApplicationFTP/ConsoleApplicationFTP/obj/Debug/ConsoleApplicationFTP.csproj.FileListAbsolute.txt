@@ -1,0 +1,6 @@
+c:\users\iset-da\documents\visual studio 2015\Projects\ConsoleApplicationFTP\ConsoleApplicationFTP\bin\Debug\ConsoleApplicationFTP.exe.config
+C:\Users\iset-da\documents\visual studio 2015\Projects\ConsoleApplicationFTP\ConsoleApplicationFTP\bin\Debug\ConsoleApplicationFTP.exe
+C:\Users\iset-da\documents\visual studio 2015\Projects\ConsoleApplicationFTP\ConsoleApplicationFTP\bin\Debug\ConsoleApplicationFTP.pdb
+C:\Users\iset-da\documents\visual studio 2015\Projects\ConsoleApplicationFTP\ConsoleApplicationFTP\obj\Debug\ConsoleApplicationFTP.csprojResolveAssemblyReference.cache
+C:\Users\iset-da\documents\visual studio 2015\Projects\ConsoleApplicationFTP\ConsoleApplicationFTP\obj\Debug\ConsoleApplicationFTP.exe
+C:\Users\iset-da\documents\visual studio 2015\Projects\ConsoleApplicationFTP\ConsoleApplicationFTP\obj\Debug\ConsoleApplicationFTP.pdb
