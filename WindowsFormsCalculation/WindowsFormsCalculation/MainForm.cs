@@ -84,7 +84,7 @@ namespace WindowsFormsCalculation
             txtExpBox.Text += txtResultBox.Text;
             txtExpBox.Text += btn.Text;
 
-            txtResultBox.Text = string.Empty;
+            txtResultBox.Text = "0";
             savedValue = string.Empty;
 
             recentBtn = btn.Text;
@@ -200,7 +200,7 @@ namespace WindowsFormsCalculation
             txtResultBox.Text = btn.Text;
             txtExpBox.Text += btn.Text;
 
-            txtResultBox.Text = string.Empty;
+            txtResultBox.Text = "0";
             savedValue = string.Empty;
 
             recentBtn = btn.Text;
@@ -233,6 +233,15 @@ namespace WindowsFormsCalculation
         private void btnMS_Click(object sender, EventArgs e)
         {
             memory = double.Parse(txtResultBox.Text);
+
+            // 연산 후 초기화
+            if (recentBtn == "=")
+            {
+                txtResultBox.Text = "0";
+                txtExpBox.Text = string.Empty;
+                recentBtn = string.Empty;
+            }
+
             btnMC.Enabled = true;
             btnMR.Enabled = true;
             memFlag = true;
@@ -262,9 +271,17 @@ namespace WindowsFormsCalculation
         private void btnMC_Click(object sender, EventArgs e)
         {
             memory = 0;
+
+            // 연산 후 초기화
+            if (recentBtn == "=")
+            {
+                txtResultBox.Text = "0";
+                txtExpBox.Text = string.Empty;
+                recentBtn = string.Empty;
+            }
+
             btnMR.Enabled = false;
             btnMC.Enabled = false;
-
             Button btn = (Button)sender;
             recentBtn = btn.Text;
         }
@@ -273,6 +290,15 @@ namespace WindowsFormsCalculation
         private void btnMPlus_Click(object sender, EventArgs e)
         {
             memory = memory + double.Parse(txtResultBox.Text);
+
+            // 연산 후 초기화
+            if (recentBtn == "=")
+            {
+                txtResultBox.Text = "0";
+                txtExpBox.Text = string.Empty;
+                recentBtn = string.Empty;
+            }
+
             btnMC.Enabled = true;
             btnMR.Enabled = true;
             txtResultBox.Text = "0";
@@ -285,6 +311,15 @@ namespace WindowsFormsCalculation
         private void btnMMinus_Click(object sender, EventArgs e)
         {
             memory = memory - double.Parse(txtResultBox.Text);
+
+            // 연산 후 초기화
+            if (recentBtn == "=")
+            {
+                txtResultBox.Text = "0";
+                txtExpBox.Text = string.Empty;
+                recentBtn = string.Empty;
+            }
+
             btnMC.Enabled = true;
             btnMR.Enabled = true;
             txtResultBox.Text = "0";
