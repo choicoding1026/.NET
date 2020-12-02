@@ -16,7 +16,6 @@ namespace WindowsFormsCalculation
 
         public string savedValue = string.Empty;
         public double memory = 0;
-        public int i = 0;
         public bool opFlag = false;
         public bool memFlag = false;
         public string recentBtn = string.Empty;
@@ -349,6 +348,98 @@ namespace WindowsFormsCalculation
         private void Calculator_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void MainForm_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                return;
+            }
+        }
+
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Modifiers == Keys.Shift)
+            {
+                if (Keys.D9 == e.KeyCode)
+                {
+                    btnLeftBracket_Click(this.btnLB, null);
+                }
+                else if (Keys.D0 == e.KeyCode)
+                {
+                    btnRightBracket_Click(this.btnRB, null);
+                }
+                else if (Keys.Oemplus == e.KeyCode)
+                {
+                    btnOperator_Click(this.btnPlus, null);
+                }
+                else if (Keys.D8 == e.KeyCode)
+                {
+                    btnOperator_Click(this.btnMulti, null);
+                }
+            }
+            else if (Keys.D0 == e.KeyCode)
+            {
+                btnNumber_Click(this.btn0, null);
+            }
+            else if (Keys.D8 == e.KeyCode)
+            {
+                btnNumber_Click(this.btn8, null);
+            }
+            else if (Keys.D9 == e.KeyCode)
+            {
+                btnNumber_Click(this.btn9, null);
+            }
+            else if (Keys.Oemplus == e.KeyCode)
+            {
+                btnEqual_Click(this.btnEqual, null);
+            }
+
+            if (Keys.D1 == e.KeyCode)
+            {
+                btnNumber_Click(this.btn1, null);
+            }
+            if (Keys.D2 == e.KeyCode)
+            {
+                btnNumber_Click(this.btn2, null);
+            }
+            if (Keys.D3 == e.KeyCode)
+            {
+                btnNumber_Click(this.btn3, null);
+            }
+            if (Keys.D4 == e.KeyCode)
+            {
+                btnNumber_Click(this.btn4, null);
+            }
+            if (Keys.D5 == e.KeyCode)
+            {
+                btnNumber_Click(this.btn5, null);
+            }
+            if (Keys.D6 == e.KeyCode)
+            {
+                btnNumber_Click(this.btn6, null);
+            }
+            if (Keys.D7 == e.KeyCode)
+            {
+                btnNumber_Click(this.btn7, null);
+            }
+            if (Keys.Back == e.KeyCode)
+            {
+                btnDelete_Click(this.btnDel, null);
+            }
+            if (Keys.OemMinus == e.KeyCode)
+            {
+                btnOperator_Click(this.btnMinus, null);
+            }
+            if (Keys.OemPeriod == e.KeyCode)
+            {
+                btnDot_Click(this.btnDot, null);
+            }
+            if (Keys.OemQuestion == e.KeyCode)
+            {
+                btnOperator_Click(this.btnDiv, null);
+            }
         }
     }
 }
