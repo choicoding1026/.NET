@@ -16,7 +16,7 @@ namespace WindowsFormsCalculation
 
         public string savedValue = string.Empty;
         public double memory = 0;
-        public bool opFlag = false;
+        //public bool opFlag = false;
         public bool memFlag = false;
         public string recentBtn = string.Empty;
 
@@ -34,7 +34,7 @@ namespace WindowsFormsCalculation
         public void btnNumber_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            
+
             // 연산 후 초기화
             if (recentBtn == "=")
             {
@@ -42,11 +42,10 @@ namespace WindowsFormsCalculation
                 txtExpBox.Text = string.Empty;
                 recentBtn = string.Empty;
             }
-            
-            if (txtResultBox.Text == "0" || opFlag == true || memFlag == true)
+
+            if (txtResultBox.Text == "0" || memFlag == true)
             {
                 txtResultBox.Text = btn.Text;
-                opFlag = false;
                 memFlag = false;
             }
             else
@@ -54,7 +53,7 @@ namespace WindowsFormsCalculation
                 txtResultBox.Text = txtResultBox.Text + btn.Text;
                 savedValue += btn.Text;
             }
-     
+
             /// 3자리마다 콤마 삽입            
             double v = double.Parse(txtResultBox.Text);
             txtResultBox.Text = commaProcedure(v, txtResultBox.Text);
@@ -135,7 +134,7 @@ namespace WindowsFormsCalculation
             decimal result = 0;
             result = m_Manager.start(data);
             this.txtResultBox.Text = result.ToString();
- 
+
             // 3자리마다 ,
             double v = double.Parse(txtResultBox.Text);
             txtResultBox.Text = commaProcedure(v, txtResultBox.Text);
@@ -151,7 +150,6 @@ namespace WindowsFormsCalculation
             txtResultBox.Text = "0";
             txtExpBox.Text = string.Empty;
             savedValue = string.Empty;
-            opFlag = false;
 
             Button btn = sender as Button;
             recentBtn = btn.Text;
@@ -347,15 +345,8 @@ namespace WindowsFormsCalculation
 
         private void Calculator_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void MainForm_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                return;
-            }
+            // Enter 키 입력시 Focus 오류 방지
+            this.ActiveControl = txtResultBox;
         }
 
         private void MainForm_KeyDown(object sender, KeyEventArgs e)
@@ -379,66 +370,76 @@ namespace WindowsFormsCalculation
                     btnOperator_Click(this.btnMulti, null);
                 }
             }
-            else if (Keys.D0 == e.KeyCode)
+            else
             {
-                btnNumber_Click(this.btn0, null);
-            }
-            else if (Keys.D8 == e.KeyCode)
-            {
-                btnNumber_Click(this.btn8, null);
-            }
-            else if (Keys.D9 == e.KeyCode)
-            {
-                btnNumber_Click(this.btn9, null);
-            }
-            else if (Keys.Oemplus == e.KeyCode)
-            {
-                btnEqual_Click(this.btnEqual, null);
-            }
-
-            if (Keys.D1 == e.KeyCode)
-            {
-                btnNumber_Click(this.btn1, null);
-            }
-            if (Keys.D2 == e.KeyCode)
-            {
-                btnNumber_Click(this.btn2, null);
-            }
-            if (Keys.D3 == e.KeyCode)
-            {
-                btnNumber_Click(this.btn3, null);
-            }
-            if (Keys.D4 == e.KeyCode)
-            {
-                btnNumber_Click(this.btn4, null);
-            }
-            if (Keys.D5 == e.KeyCode)
-            {
-                btnNumber_Click(this.btn5, null);
-            }
-            if (Keys.D6 == e.KeyCode)
-            {
-                btnNumber_Click(this.btn6, null);
-            }
-            if (Keys.D7 == e.KeyCode)
-            {
-                btnNumber_Click(this.btn7, null);
-            }
-            if (Keys.Back == e.KeyCode)
-            {
-                btnDelete_Click(this.btnDel, null);
-            }
-            if (Keys.OemMinus == e.KeyCode)
-            {
-                btnOperator_Click(this.btnMinus, null);
-            }
-            if (Keys.OemPeriod == e.KeyCode)
-            {
-                btnDot_Click(this.btnDot, null);
-            }
-            if (Keys.OemQuestion == e.KeyCode)
-            {
-                btnOperator_Click(this.btnDiv, null);
+                if (e.KeyCode == Keys.D0)
+                {
+                    btnNumber_Click(this.btn0, null);
+                }
+                else if (e.KeyCode == Keys.D8)
+                {
+                    btnNumber_Click(this.btn8, null);
+                }
+                else if (e.KeyCode == Keys.D9)
+                {
+                    btnNumber_Click(this.btn9, null);
+                }
+                else if (e.KeyCode == Keys.Oemplus)
+                {
+                    btnEqual_Click(this.btnEqual, null);
+                }
+                else if (e.KeyCode == Keys.D1)
+                {
+                    btnNumber_Click(this.btn1, null);
+                }
+                else if (e.KeyCode == Keys.D2)
+                {
+                    btnNumber_Click(this.btn2, null);
+                }
+                else if (e.KeyCode == Keys.D3)
+                {
+                    btnNumber_Click(this.btn3, null);
+                }
+                else if (e.KeyCode == Keys.D4)
+                {
+                    btnNumber_Click(this.btn4, null);
+                }
+                else if (e.KeyCode == Keys.D5)
+                {
+                    btnNumber_Click(this.btn5, null);
+                }
+                else if (e.KeyCode == Keys.D6)
+                {
+                    btnNumber_Click(this.btn6, null);
+                }
+                else if (e.KeyCode == Keys.D7)
+                {
+                    btnNumber_Click(this.btn7, null);
+                }
+                else if (e.KeyCode == Keys.Back)
+                {
+                    btnDelete_Click(this.btnDel, null);
+                }
+                else if (e.KeyCode == Keys.OemMinus)
+                {
+                    btnOperator_Click(this.btnMinus, null);
+                }
+                else if (e.KeyCode == Keys.OemPeriod)
+                {
+                    btnDot_Click(this.btnDot, null);
+                }
+                else if (e.KeyCode == Keys.OemQuestion)
+                {
+                    btnOperator_Click(this.btnDiv, null);
+                }
+                else if (e.KeyCode == Keys.Enter)
+                {
+                    btnEqual_Click(this.btnEqual, null);
+                }
+                else
+                {
+                    //
+                }
             }
         }
     }

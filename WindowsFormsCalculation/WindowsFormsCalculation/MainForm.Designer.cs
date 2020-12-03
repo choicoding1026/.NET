@@ -36,8 +36,8 @@
             this.btnMR = new System.Windows.Forms.Button();
             this.btnMC = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtExpBox = new System.Windows.Forms.TextBox();
             this.txtResultBox = new System.Windows.Forms.TextBox();
+            this.txtExpBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btnPlus = new System.Windows.Forms.Button();
             this.btnEqual = new System.Windows.Forms.Button();
@@ -212,19 +212,6 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(451, 122);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
-            // txtExpBox
-            // 
-            this.txtExpBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtExpBox.BackColor = System.Drawing.Color.White;
-            this.txtExpBox.Enabled = false;
-            this.txtExpBox.Location = new System.Drawing.Point(3, 8);
-            this.txtExpBox.Name = "txtExpBox";
-            this.txtExpBox.ReadOnly = true;
-            this.txtExpBox.Size = new System.Drawing.Size(445, 25);
-            this.txtExpBox.TabIndex = 0;
-            this.txtExpBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // txtResultBox
             // 
             this.txtResultBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -238,6 +225,19 @@
             this.txtResultBox.Size = new System.Drawing.Size(445, 80);
             this.txtResultBox.TabIndex = 1;
             this.txtResultBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtExpBox
+            // 
+            this.txtExpBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtExpBox.BackColor = System.Drawing.Color.White;
+            this.txtExpBox.Enabled = false;
+            this.txtExpBox.Location = new System.Drawing.Point(3, 8);
+            this.txtExpBox.Name = "txtExpBox";
+            this.txtExpBox.ReadOnly = true;
+            this.txtExpBox.Size = new System.Drawing.Size(445, 25);
+            this.txtExpBox.TabIndex = 0;
+            this.txtExpBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tableLayoutPanel3
             // 
@@ -571,7 +571,6 @@
             this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Calculator_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyUp);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
