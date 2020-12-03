@@ -4,14 +4,15 @@ using System.Net;
 using System.IO;
 namespace ConsoleApplicationFTP
 {
-    public class ftpConnector
+    public class FtpConnector
     {
         public string ip = string.Empty;
         public string id = string.Empty;
         public string pwd = string.Empty;
         public string target = string.Empty;
+        public string forUpload = string.Empty;
 
-        public ftpConnector()
+        public FtpConnector()
         {
         }
 
@@ -38,7 +39,7 @@ namespace ConsoleApplicationFTP
         // 다운로드 함수
         public void DownloadFileList(string ip, string target)
         {
-            var list = new List<String>();
+            var list = new List<string>();
             // ftp에 접속해서 파일과 디렉토리 리스트를 가져온다.
             using (var res = Connect(ip, WebRequestMethods.Ftp.ListDirectory))
             {
@@ -85,6 +86,58 @@ namespace ConsoleApplicationFTP
                     Directory.CreateDirectory(target + "\\" + item);
                     // 디렉토리라면 재귀적 방법으로 다시 파일리스트를 탐색한다.
                     DownloadFileList(ip + "/" + item, target + "\\" + item);
+                }
+            }
+        }
+
+        public void UploadFileList(string ip, string forUpload)
+        {
+            // 업로드할 경로의 속성을 구한다.
+            var attr = File.GetAttributes(forUpload);
+            // 만약 디렉토리라면..
+            if ((attr & FileAttributes.Directory) == FileAttributes.Directory)
+            {
+                // 디렉토리 정보를 가져온다.
+                DirectoryInfo dir = new DirectoryInfo(forUpload);
+                // 디렉토리 안의 파일 리스트를 가져온다.
+                foreach (var item in dir.GetFiles())
+                {
+                    // 파일을 업로드한다.
+                    UploadFileList(ip + "/" + item.Name, item.FullName);
+                }
+                // 디렉토리 안의 하위 디렉토리 리스트를 가져온다.
+                foreach (var item in dir.GetDirectories())
+                {
+                    try
+                    {
+                        // ftp에 디렉토리를 생성한다.
+                        Connect(ip + "/" + item.Name, WebRequestMethods.Ftp.MakeDirectory).Close();
+                    }
+                    catch (WebException)
+                    {
+                        // 만약에 ftp에 디렉토리가 존재한다면 에러가 날 것이다.
+                    }
+                    // 디렉토리를 업로드한다.(재귀 함수 호출)
+                    UploadFileList(ip + "/" + item.Name, item.FullName);
+                }
+            }
+            else
+            {
+                // 디렉토리가 아닌 파일을 경우인데, 파일의 stream을 취득한다.
+                using (var fs = File.OpenRead(forUpload))
+                {
+                    // 파일을 업로드한다.
+                    Connect(ip, WebRequestMethods.Ftp.UploadFile, (req) =>
+                    {
+                        // 파일 크기 설정
+                        req.ContentLength = fs.Length;
+                        // GetResponse()가 호출되기 전에 request스트림에 파일 binary를 넣는다.
+                        using (var stream = req.GetRequestStream())
+                        {
+                            fs.CopyTo(stream);
+                        }
+                    }).Close();
+                    // respose 객체를 닫는다.
                 }
             }
         }

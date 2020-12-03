@@ -7,7 +7,7 @@ using System.Xml;
 
 namespace ConsoleApplicationFTP
 {
-    class xmlReader
+    class XmlReader
     {
 
         /*
