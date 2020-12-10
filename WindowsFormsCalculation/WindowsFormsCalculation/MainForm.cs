@@ -14,9 +14,13 @@ namespace WindowsFormsCalculation
     {
         public CalManager m_Manager;
 
+        /// camel case 로 (_ 쓰지않기)
+        /// 변수 선언 시 초기화 x 
+        /// SOLID 원칙
+        /// static 지양 -> 메모리 많이 사용 = 비싼 cost
+        /// Button btn = sender as Button 형식으로 쓰기
         public string savedValue = string.Empty;
         public double memory = 0;
-        //public bool opFlag = false;
         public bool memFlag = false;
         public string recentBtn = string.Empty;
 
