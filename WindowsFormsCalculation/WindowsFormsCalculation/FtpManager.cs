@@ -12,7 +12,7 @@ namespace WindowsFormsCalculation
 {
     class FtpManager
     {
-        int count = 0;
+        int count = 1;
 
         private FtpWebResponse connectServer(string ip, string id, string pw, string method, Action<FtpWebRequest> action = null)
         {
@@ -84,8 +84,15 @@ namespace WindowsFormsCalculation
                         case ".xml":
                             {
                                 var xml = new XmlDocument() as XmlDocument;
-                                xml.Load(filePath);
-                                // TODOLIST
+                                xml.LoadXml(fileString);
+
+                                XmlNodeList xmlList = xml.SelectNodes("/expressions/expression");
+
+                                foreach (XmlNode i in xmlList)
+                                {
+                                    expression = i["exp"].InnerText;
+                                }
+                                
                                 break;
                             }
                         default:

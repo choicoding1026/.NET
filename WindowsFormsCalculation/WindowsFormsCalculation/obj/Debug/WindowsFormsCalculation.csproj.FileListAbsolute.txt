@@ -7,12 +7,4 @@ C:\Users\iset-da\documents\visual studio 2015\Projects\WindowsFormsCalculation\W
 C:\Users\iset-da\documents\visual studio 2015\Projects\WindowsFormsCalculation\WindowsFormsCalculation\obj\Debug\WindowsFormsCalculation.exe
 C:\Users\iset-da\documents\visual studio 2015\Projects\WindowsFormsCalculation\WindowsFormsCalculation\obj\Debug\WindowsFormsCalculation.pdb
 C:\Users\iset-da\documents\visual studio 2015\Projects\WindowsFormsCalculation\WindowsFormsCalculation\obj\Debug\WindowsFormsCalculation.MainForm.resources
-C:\Users\iset-da\Desktop\계산기\Dev\WindowsFormsCalculation\WindowsFormsCalculation\bin\Debug\WindowsFormsCalculation.exe.config
-C:\Users\iset-da\Desktop\계산기\Dev\WindowsFormsCalculation\WindowsFormsCalculation\obj\Debug\WindowsFormsCalculation.exe
-C:\Users\iset-da\Desktop\계산기\Dev\WindowsFormsCalculation\WindowsFormsCalculation\obj\Debug\WindowsFormsCalculation.pdb
-C:\Users\iset-da\Desktop\계산기\Dev\WindowsFormsCalculation\WindowsFormsCalculation\bin\Debug\WindowsFormsCalculation.exe
-C:\Users\iset-da\Desktop\계산기\Dev\WindowsFormsCalculation\WindowsFormsCalculation\bin\Debug\WindowsFormsCalculation.pdb
-C:\Users\iset-da\Desktop\계산기\Dev\WindowsFormsCalculation\WindowsFormsCalculation\obj\Debug\WindowsFormsCalculation.csprojResolveAssemblyReference.cache
-C:\Users\iset-da\Desktop\계산기\Dev\WindowsFormsCalculation\WindowsFormsCalculation\obj\Debug\WindowsFormsCalculation.MainForm.resources
-C:\Users\iset-da\Desktop\계산기\Dev\WindowsFormsCalculation\WindowsFormsCalculation\obj\Debug\WindowsFormsCalculation.Properties.Resources.resources
-C:\Users\iset-da\Desktop\계산기\Dev\WindowsFormsCalculation\WindowsFormsCalculation\obj\Debug\WindowsFormsCalculation.csproj.GenerateResource.Cache
+C:\Users\iset-da\documents\visual studio 2015\Projects\WindowsFormsCalculation\WindowsFormsCalculation\bin\Debug\Oracle.ManagedDataAccess.dll

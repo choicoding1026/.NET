@@ -30,11 +30,13 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnOutput = new System.Windows.Forms.Button();
             this.btnMS = new System.Windows.Forms.Button();
             this.btnMM = new System.Windows.Forms.Button();
             this.btnMP = new System.Windows.Forms.Button();
             this.btnMR = new System.Windows.Forms.Button();
             this.btnMC = new System.Windows.Forms.Button();
+            this.btnInput = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.txtResultBox = new System.Windows.Forms.TextBox();
             this.txtExpBox = new System.Windows.Forms.TextBox();
@@ -88,17 +90,21 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 5;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnCount = 7;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel2.Controls.Add(this.btnOutput, 6, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnMS, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnMM, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnMP, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnMR, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnMC, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnInput, 5, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 131);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -106,6 +112,21 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(451, 43);
             this.tableLayoutPanel2.TabIndex = 1;
+            // 
+            // btnOutput
+            // 
+            this.btnOutput.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnOutput.Enabled = false;
+            this.btnOutput.FlatAppearance.BorderSize = 0;
+            this.btnOutput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOutput.Font = new System.Drawing.Font("맑은 고딕", 8F, System.Drawing.FontStyle.Bold);
+            this.btnOutput.Location = new System.Drawing.Point(408, 3);
+            this.btnOutput.Name = "btnOutput";
+            this.btnOutput.Size = new System.Drawing.Size(40, 37);
+            this.btnOutput.TabIndex = 6;
+            this.btnOutput.Text = "out";
+            this.btnOutput.UseVisualStyleBackColor = true;
+            this.btnOutput.Click += new System.EventHandler(this.btnOutput_Click);
             // 
             // btnMS
             // 
@@ -117,9 +138,9 @@
             this.btnMS.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Window;
             this.btnMS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMS.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnMS.Location = new System.Drawing.Point(363, 3);
+            this.btnMS.Location = new System.Drawing.Point(291, 3);
             this.btnMS.Name = "btnMS";
-            this.btnMS.Size = new System.Drawing.Size(85, 37);
+            this.btnMS.Size = new System.Drawing.Size(66, 37);
             this.btnMS.TabIndex = 4;
             this.btnMS.Text = "MS";
             this.btnMS.UseVisualStyleBackColor = false;
@@ -135,9 +156,9 @@
             this.btnMM.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Window;
             this.btnMM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMM.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnMM.Location = new System.Drawing.Point(273, 3);
+            this.btnMM.Location = new System.Drawing.Point(219, 3);
             this.btnMM.Name = "btnMM";
-            this.btnMM.Size = new System.Drawing.Size(84, 37);
+            this.btnMM.Size = new System.Drawing.Size(66, 37);
             this.btnMM.TabIndex = 3;
             this.btnMM.Text = "M-";
             this.btnMM.UseVisualStyleBackColor = false;
@@ -153,9 +174,9 @@
             this.btnMP.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Window;
             this.btnMP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMP.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnMP.Location = new System.Drawing.Point(183, 3);
+            this.btnMP.Location = new System.Drawing.Point(147, 3);
             this.btnMP.Name = "btnMP";
-            this.btnMP.Size = new System.Drawing.Size(84, 37);
+            this.btnMP.Size = new System.Drawing.Size(66, 37);
             this.btnMP.TabIndex = 2;
             this.btnMP.Text = "M+";
             this.btnMP.UseVisualStyleBackColor = false;
@@ -171,9 +192,9 @@
             this.btnMR.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Window;
             this.btnMR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMR.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnMR.Location = new System.Drawing.Point(93, 3);
+            this.btnMR.Location = new System.Drawing.Point(75, 3);
             this.btnMR.Name = "btnMR";
-            this.btnMR.Size = new System.Drawing.Size(84, 37);
+            this.btnMR.Size = new System.Drawing.Size(66, 37);
             this.btnMR.TabIndex = 1;
             this.btnMR.Text = "MR";
             this.btnMR.UseVisualStyleBackColor = false;
@@ -191,11 +212,26 @@
             this.btnMC.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnMC.Location = new System.Drawing.Point(3, 3);
             this.btnMC.Name = "btnMC";
-            this.btnMC.Size = new System.Drawing.Size(84, 37);
+            this.btnMC.Size = new System.Drawing.Size(66, 37);
             this.btnMC.TabIndex = 0;
             this.btnMC.Text = "MC";
             this.btnMC.UseVisualStyleBackColor = false;
             this.btnMC.Click += new System.EventHandler(this.btnMC_Click);
+            // 
+            // btnInput
+            // 
+            this.btnInput.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnInput.Enabled = false;
+            this.btnInput.FlatAppearance.BorderSize = 0;
+            this.btnInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInput.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold);
+            this.btnInput.Location = new System.Drawing.Point(363, 3);
+            this.btnInput.Name = "btnInput";
+            this.btnInput.Size = new System.Drawing.Size(39, 37);
+            this.btnInput.TabIndex = 5;
+            this.btnInput.Text = "in";
+            this.btnInput.UseVisualStyleBackColor = true;
+            this.btnInput.Click += new System.EventHandler(this.btnInput_Click);
             // 
             // tableLayoutPanel4
             // 
@@ -613,6 +649,8 @@
         private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btnRB;
         private System.Windows.Forms.Button btnLB;
+        private System.Windows.Forms.Button btnOutput;
+        private System.Windows.Forms.Button btnInput;
     }
 }
 

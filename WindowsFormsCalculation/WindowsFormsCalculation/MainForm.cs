@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,11 +15,6 @@ namespace WindowsFormsCalculation
     {
         public CalManager m_Manager;
 
-        /// camel case 로 (_ 쓰지않기)
-        /// 변수 선언 시 초기화 x 
-        /// SOLID 원칙
-        /// static 지양 -> 메모리 많이 사용 = 비싼 cost
-        /// Button btn = sender as Button 형식으로 쓰기
         public string savedValue = string.Empty;
         public double memory = 0;
         public bool memFlag = false;
@@ -446,5 +442,33 @@ namespace WindowsFormsCalculation
                 }
             }
         }
+
+        private void btnOutput_Click(object sender, EventArgs e)
+        {
+            //파일 저장
+            StreamWriter sw = new StreamWriter(new FileStream("output.txt", FileMode.Create));
+            sw.WriteLine(txtExpBox.Text + " = " + txtResultBox.Text);
+            sw.Close();
+
+            Form a = new Form();
+            MessageBox.Show("결과저장 완료");
+        }
+
+        private void btnInput_Click(object sender, EventArgs e)
+        {
+            {
+                //파일 불러오기
+                StreamReader sr = new StreamReader(new FileStream("input.txt", FileMode.Open));
+                string inputValue = string.Empty;
+
+                while (sr.EndOfStream == false)
+                {
+                    inputValue = sr.ReadLine();
+                }
+                txtResultBox.Text = inputValue;
+
+            }
+        }
     }
 }
+
