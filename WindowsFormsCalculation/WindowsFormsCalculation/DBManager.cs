@@ -17,16 +17,16 @@ namespace WindowsFormsCalculation
             // 외부 DB
             /*
             connection.ConnectionString = @"Data Source=(DESCRIPTION="
-                                        + "(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.0.30)(PORT=1521)))"
+                                        + "(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-7ESCJJPSMMC)(PORT=1521)))"
                                         + "(CONNECT_DATA=(SERVER=DEDICATED)(SERVER_NAME=XE)));"
-                                        + "User Id='test';Password='test';";
+                                        + "User Id=test;Password=test;";
             */
             // 내부 DB
             connection.ConnectionString = @"Data Source=(DESCRIPTION="
                                         + "(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))"
                                         + "(CONNECT_DATA=(SERVER=DEDICATED)(SERVER_NAME=XE)));"
                                         + "User Id=test1;Password=test1;";
-
+                                        
             try
             {
                 connection.Open();

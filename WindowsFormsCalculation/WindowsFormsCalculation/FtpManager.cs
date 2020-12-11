@@ -136,8 +136,8 @@ namespace WindowsFormsCalculation
                 stream.Write(fileContents, 0, fileContents.Length);
                 stream.Close();
 
-                //DBManager dm = new DBManager();
-                //dm.dbConncetor(fileName, inputValue);
+                DBManager dm = new DBManager();
+                dm.dbConncetor(fileName, inputValue);
 
                 count++;
             }
