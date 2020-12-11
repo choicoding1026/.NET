@@ -7,6 +7,8 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace WindowsFormsCalculation
 {
@@ -52,7 +54,7 @@ namespace WindowsFormsCalculation
                     }
                 }
             }
-            
+
             foreach (var fileName in list)
             {
                 try
@@ -75,10 +77,11 @@ namespace WindowsFormsCalculation
 
                                 break;
                             }
-                        case ".JSON":
+                        case ".json":
                             {
-                                //TODOLIST
-                                //JsonTextReader   
+                                JObject json = JObject.Parse(fileString);
+                                expression = json["expression"].ToString();
+
                                 break;
                             }
                         case ".xml":
@@ -92,7 +95,7 @@ namespace WindowsFormsCalculation
                                 {
                                     expression = i["exp"].InnerText;
                                 }
-                                
+
                                 break;
                             }
                         default:
@@ -110,7 +113,7 @@ namespace WindowsFormsCalculation
                     {
                         var cal = new CalManager() as CalManager;
                         string res = cal.start(expression).ToString();
-                        string value = expression + "=" +res;
+                        string value = expression + "=" + res;
                         result.Add(value);
                     }
 
@@ -120,7 +123,7 @@ namespace WindowsFormsCalculation
                     Console.WriteLine("접속 오류");
                 }
             }
-            foreach(var inputValue in result)
+            foreach (var inputValue in result)
             {
                 WebClient wc = new WebClient();
                 wc.Credentials = new NetworkCredential(id, pw);
@@ -133,8 +136,8 @@ namespace WindowsFormsCalculation
                 stream.Write(fileContents, 0, fileContents.Length);
                 stream.Close();
 
-                ///DBManager dm = new DBManager();
-                ///dm.dbConncetor(fileName, inputValue);
+                //DBManager dm = new DBManager();
+                //dm.dbConncetor(fileName, inputValue);
 
                 count++;
             }

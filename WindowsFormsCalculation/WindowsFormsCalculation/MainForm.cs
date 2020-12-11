@@ -13,7 +13,8 @@ namespace WindowsFormsCalculation
 {
     public partial class MainForm : Form
     {
-        public CalManager m_Manager;
+        public CalManager calManager;
+        private FtpManager ftpManager;
 
         public string savedValue = string.Empty;
         public double memory = 0;
@@ -24,11 +25,14 @@ namespace WindowsFormsCalculation
         {
             InitializeComponent();
 
+            ftpManager = new FtpManager();
+            ftpManager.calculateAutomation("ftp://192.168.0.17", "test", "test");
+
             txtResultBox.Text = "0";
             btnMC.Enabled = false;
             btnMR.Enabled = false;
 
-            m_Manager = new CalManager();
+            calManager = new CalManager();
         }
 
         public void btnNumber_Click(object sender, EventArgs e)
@@ -132,7 +136,7 @@ namespace WindowsFormsCalculation
             txtExpBox.Text += btn.Text;
 
             decimal result = 0;
-            result = m_Manager.start(data);
+            result = calManager.start(data);
             this.txtResultBox.Text = result.ToString();
 
             // 3자리마다 ,
@@ -192,7 +196,7 @@ namespace WindowsFormsCalculation
                 recentBtn = string.Empty;
             }
 
-            Button btn = (Button)sender;
+            Button btn = sender as Button;
 
             txtResultBox.Text = btn.Text;
             txtExpBox.Text += btn.Text;
@@ -214,7 +218,7 @@ namespace WindowsFormsCalculation
             }
             else
             {
-                Button btn = (Button)sender;
+                Button btn = sender as Button;
 
                 txtExpBox.Text += txtResultBox.Text;
                 txtExpBox.Text += btn.Text;
@@ -243,7 +247,7 @@ namespace WindowsFormsCalculation
             btnMR.Enabled = true;
             memFlag = true;
 
-            Button btn = (Button)sender;
+            Button btn = sender as Button;
             recentBtn = btn.Text;
         }
 
@@ -260,7 +264,7 @@ namespace WindowsFormsCalculation
             }
             memFlag = true;
 
-            Button btn = (Button)sender;
+            Button btn = sender as Button;
             recentBtn = btn.Text;
         }
 
@@ -279,7 +283,7 @@ namespace WindowsFormsCalculation
 
             btnMR.Enabled = false;
             btnMC.Enabled = false;
-            Button btn = (Button)sender;
+            Button btn = sender as Button;
             recentBtn = btn.Text;
         }
 
@@ -300,7 +304,7 @@ namespace WindowsFormsCalculation
             btnMR.Enabled = true;
             txtResultBox.Text = "0";
 
-            Button btn = (Button)sender;
+            Button btn = sender as Button;
             recentBtn = btn.Text;
         }
 
@@ -321,7 +325,7 @@ namespace WindowsFormsCalculation
             btnMR.Enabled = true;
             txtResultBox.Text = "0";
 
-            Button btn = (Button)sender;
+            Button btn = sender as Button;
             recentBtn = btn.Text;
         }
 
@@ -440,33 +444,6 @@ namespace WindowsFormsCalculation
                 {
                     //
                 }
-            }
-        }
-
-        private void btnOutput_Click(object sender, EventArgs e)
-        {
-            //파일 저장
-            StreamWriter sw = new StreamWriter(new FileStream("output.txt", FileMode.Create));
-            sw.WriteLine(txtExpBox.Text + " = " + txtResultBox.Text);
-            sw.Close();
-
-            Form a = new Form();
-            MessageBox.Show("결과저장 완료");
-        }
-
-        private void btnInput_Click(object sender, EventArgs e)
-        {
-            {
-                //파일 불러오기
-                StreamReader sr = new StreamReader(new FileStream("input.txt", FileMode.Open));
-                string inputValue = string.Empty;
-
-                while (sr.EndOfStream == false)
-                {
-                    inputValue = sr.ReadLine();
-                }
-                txtResultBox.Text = inputValue;
-
             }
         }
     }

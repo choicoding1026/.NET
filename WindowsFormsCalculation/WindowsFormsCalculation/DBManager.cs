@@ -38,11 +38,12 @@ namespace WindowsFormsCalculation
             OracleCommand cmd = new OracleCommand();
             cmd.Connection = connection;
 
-            string insertSql = string.Format("INSERT INTO CALCULATE VALUES ('{0}','{1}')", fileName, expression); 
-                                
+            string insertSql = string.Format("INSERT INTO CALCULATE VALUES ('{0}','{1}')", fileName, expression);
+
             cmd.CommandText = insertSql;
+            cmd.ExecuteNonQuery();
         }
 
-        
+
     }
 }

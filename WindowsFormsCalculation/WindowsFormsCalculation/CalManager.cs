@@ -18,6 +18,8 @@ namespace WindowsFormsCalculation
             {
                 data = data.Replace(" ", string.Empty);
                 data = data.Replace(",", string.Empty);
+                data = data.Replace("*", "×");
+                data = data.Replace("/", "÷");
 
                 IList tokenStack = makeTokens(data);
                 
@@ -40,6 +42,7 @@ namespace WindowsFormsCalculation
             }
             catch(Exception e)
             {
+                Console.WriteLine(e.Message);
                 return (decimal)0;
             }
 

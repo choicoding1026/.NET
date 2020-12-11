@@ -7,4 +7,6 @@ C:\Users\iset-da\documents\visual studio 2015\Projects\WindowsFormsCalculation\W
 C:\Users\iset-da\documents\visual studio 2015\Projects\WindowsFormsCalculation\WindowsFormsCalculation\obj\Debug\WindowsFormsCalculation.exe
 C:\Users\iset-da\documents\visual studio 2015\Projects\WindowsFormsCalculation\WindowsFormsCalculation\obj\Debug\WindowsFormsCalculation.pdb
 C:\Users\iset-da\documents\visual studio 2015\Projects\WindowsFormsCalculation\WindowsFormsCalculation\obj\Debug\WindowsFormsCalculation.MainForm.resources
-C:\Users\iset-da\documents\visual studio 2015\Projects\WindowsFormsCalculation\WindowsFormsCalculation\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WindowsFormsCalculation\WindowsFormsCalculation\bin\Debug\Newtonsoft.Json.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WindowsFormsCalculation\WindowsFormsCalculation\bin\Debug\Newtonsoft.Json.xml
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WindowsFormsCalculation\WindowsFormsCalculation\bin\Debug\Oracle.ManagedDataAccess.dll
