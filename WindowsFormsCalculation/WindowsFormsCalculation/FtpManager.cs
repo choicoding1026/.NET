@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace WindowsFormsCalculation
@@ -16,7 +12,7 @@ namespace WindowsFormsCalculation
     {
         int count = 1;
 
-        private FtpWebResponse connectServer(string ip, string id, string pw, string method, Action<FtpWebRequest> action = null)
+        public FtpWebResponse connectServer(string ip, string id, string pw, string method, Action<FtpWebRequest> action = null)
         {
             var request = WebRequest.Create(ip) as FtpWebRequest;
             request.UseBinary = true;

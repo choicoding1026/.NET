@@ -11,17 +11,24 @@ namespace WindowsFormsCalculation
     class DBManager
     {
         public OracleConnection connection;
+
+        /// <summary>
+        /// db 연결 및 insert
+        /// </summary>
+        /// <param name="fileName">파일명</param>
+        /// <param name="expression">수식</param>
         public void dbConncetor(string fileName, string expression)
         {
             connection = new OracleConnection();
-            // 외부 DB
-            /*
-            connection.ConnectionString = @"Data Source=(DESCRIPTION="
-                                        + "(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-7ESCJJPSMMC)(PORT=1521)))"
-                                        + "(CONNECT_DATA=(SERVER=DEDICATED)(SERVER_NAME=XE)));"
-                                        + "User Id=test;Password=test;";
-            */
-            // 내부 DB
+
+            /// 외부 DB
+            ///
+            /// connection.ConnectionString = @"Data Source=(DESCRIPTION="
+            ///                            + "(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=WIN-7ESCJJPSMMC)(PORT=1521)))"
+            ///                            + "(CONNECT_DATA=(SERVER=DEDICATED)(SERVER_NAME=XE)));"
+            ///                            + "User Id=test;Password=test;";
+            
+            /// 내부 DB
             connection.ConnectionString = @"Data Source=(DESCRIPTION="
                                         + "(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))"
                                         + "(CONNECT_DATA=(SERVER=DEDICATED)(SERVER_NAME=XE)));"
@@ -42,6 +49,8 @@ namespace WindowsFormsCalculation
 
             cmd.CommandText = insertSql;
             cmd.ExecuteNonQuery();
+
+            connection.Close();
         }
 
 

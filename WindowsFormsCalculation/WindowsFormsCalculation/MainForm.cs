@@ -1,12 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsCalculation
@@ -14,7 +7,6 @@ namespace WindowsFormsCalculation
     public partial class MainForm : Form
     {
         public CalManager calManager;
-        private FtpManager ftpManager;
 
         public string savedValue = string.Empty;
         public double memory = 0;
@@ -25,9 +17,17 @@ namespace WindowsFormsCalculation
         {
             InitializeComponent();
 
-            ftpManager = new FtpManager();
-            ftpManager.calculateAutomation("ftp://192.168.0.17", "test", "test");
+            Dictionary<string, string> dic;
+            ServerInfoManager serverInfo = new ServerInfoManager();
+            dic = serverInfo.Read(@"C:\xmlFiles\serverInfos.xml");
 
+            string ip = dic["IP"];
+            string id = dic["ID"];
+            string pw = dic["PW"];
+
+            FtpManager ftpManager = new FtpManager();
+            ftpManager.calculateAutomation(ip, id, pw);
+            
             txtResultBox.Text = "0";
             btnMC.Enabled = false;
             btnMR.Enabled = false;
@@ -35,6 +35,11 @@ namespace WindowsFormsCalculation
             calManager = new CalManager();
         }
 
+        /// <summary>
+        /// 0-9 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void btnNumber_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
@@ -66,6 +71,11 @@ namespace WindowsFormsCalculation
 
         }
 
+        /// <summary>
+        /// +, -, ×, ÷ 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void btnOperator_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
@@ -92,6 +102,11 @@ namespace WindowsFormsCalculation
             recentBtn = btn.Text;
         }
 
+        /// <summary>
+        /// . 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDot_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
@@ -117,7 +132,11 @@ namespace WindowsFormsCalculation
             recentBtn = btn.Text;
         }
 
-        // = 버튼, 계산 수행하게 됨
+        /// <summary>
+        /// = 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEqual_Click(object sender, EventArgs e)
         {
             Button btn = sender as Button;
@@ -148,7 +167,11 @@ namespace WindowsFormsCalculation
             recentBtn = btn.Text;
         }
 
-        // 초기화
+        /// <summary>
+        /// c 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnC_Click(object sender, EventArgs e)
         {
             txtResultBox.Text = "0";
@@ -159,7 +182,11 @@ namespace WindowsFormsCalculation
             recentBtn = btn.Text;
         }
 
-        // 맨 뒤의 한 글자를 지우기
+        /// <summary>
+        /// <- 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDelete_Click(object sender, EventArgs e)
         {
             // = 버튼 후 결과값 삭제 방지
@@ -186,6 +213,11 @@ namespace WindowsFormsCalculation
             recentBtn = "+";
         }
 
+        /// <summary>
+        /// ( 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLeftBracket_Click(object sender, EventArgs e)
         {
             // 연산 후 초기화
@@ -207,6 +239,11 @@ namespace WindowsFormsCalculation
             recentBtn = btn.Text;
         }
 
+        /// <summary>
+        /// ) 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnRightBracket_Click(object sender, EventArgs e)
         {
             string source = txtExpBox.Text;
@@ -230,7 +267,11 @@ namespace WindowsFormsCalculation
             }
         }
 
-        // Memory Save
+        /// <summary>
+        /// MS 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMS_Click(object sender, EventArgs e)
         {
             memory = double.Parse(txtResultBox.Text);
@@ -251,7 +292,11 @@ namespace WindowsFormsCalculation
             recentBtn = btn.Text;
         }
 
-        // Memory Read
+        /// <summary>
+        /// MR 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMR_Click(object sender, EventArgs e)
         {
             if (memory < 0)
@@ -268,7 +313,11 @@ namespace WindowsFormsCalculation
             recentBtn = btn.Text;
         }
 
-        // Memory Clear
+        /// <summary>
+        /// MC 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMC_Click(object sender, EventArgs e)
         {
             memory = 0;
@@ -287,7 +336,11 @@ namespace WindowsFormsCalculation
             recentBtn = btn.Text;
         }
 
-        // M+
+        /// <summary>
+        /// M+ 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMPlus_Click(object sender, EventArgs e)
         {
             memory = memory + double.Parse(txtResultBox.Text);
@@ -308,7 +361,11 @@ namespace WindowsFormsCalculation
             recentBtn = btn.Text;
         }
 
-        // M-
+        /// <summary>
+        /// M- 버튼
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMMinus_Click(object sender, EventArgs e)
         {
             memory = memory - double.Parse(txtResultBox.Text);
@@ -329,6 +386,12 @@ namespace WindowsFormsCalculation
             recentBtn = btn.Text;
         }
 
+        /// <summary>
+        /// 3자리마다 , 찍는 함수
+        /// </summary>
+        /// <param name="v"></param>
+        /// <param name="s"></param>
+        /// <returns></returns>
         public string commaProcedure(double v, string s)
         {
             int pos = 0;
@@ -353,6 +416,11 @@ namespace WindowsFormsCalculation
             this.ActiveControl = txtResultBox;
         }
 
+        /// <summary>
+        /// 키보드 입력받기
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MainForm_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Modifiers == Keys.Shift)
