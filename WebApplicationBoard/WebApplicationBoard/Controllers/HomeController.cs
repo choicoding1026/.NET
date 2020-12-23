@@ -1,30 +1,44 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+using System.Threading.Tasks;
+using WebApplicationBoard.Models;
 
 namespace WebApplicationBoard.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
         {
+            _logger = logger;
+        }
+
+        public IActionResult Index()
+        {
+            // 1번째 방식 View(Model)
+            // return View(hongUser);
+
+            // 2번째 방식 ViewBag
+            // ViewBag.User = hongUser;
+            // return View();
+
+            // 3번째 방식 ViewData
+
             return View();
         }
 
-        public ActionResult About()
+        public IActionResult LoginSuccess()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
-
-        public ActionResult Contact()
+        public IActionResult Error()
         {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
