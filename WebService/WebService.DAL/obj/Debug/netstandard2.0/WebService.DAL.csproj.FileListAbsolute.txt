@@ -1,0 +1,14 @@
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netstandard2.0\WebService.DAL.deps.json
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netstandard2.0\WebService.DAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netstandard2.0\WebService.DAL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netstandard2.0\WebService.IDAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netstandard2.0\WebService.Model.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netstandard2.0\WebService.IDAL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netstandard2.0\WebService.Model.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netstandard2.0\WebService.DAL.csprojAssemblyReference.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netstandard2.0\WebService.DAL.AssemblyInfoInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netstandard2.0\WebService.DAL.AssemblyInfo.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netstandard2.0\WebService.DAL.csproj.CoreCompileInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netstandard2.0\WebService.DAL.csproj.CopyComplete
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netstandard2.0\WebService.DAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netstandard2.0\WebService.DAL.pdb

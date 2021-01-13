@@ -1,0 +1,17 @@
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netcoreapp3.1\WebService.DAL.deps.json
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netcoreapp3.1\WebService.DAL.runtimeconfig.json
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netcoreapp3.1\WebService.DAL.runtimeconfig.dev.json
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netcoreapp3.1\WebService.DAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netcoreapp3.1\WebService.DAL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netcoreapp3.1\WebService.IDAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netcoreapp3.1\WebService.Model.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netcoreapp3.1\WebService.IDAL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\bin\Debug\netcoreapp3.1\WebService.Model.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netcoreapp3.1\WebService.DAL.csprojAssemblyReference.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netcoreapp3.1\WebService.DAL.AssemblyInfoInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netcoreapp3.1\WebService.DAL.AssemblyInfo.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netcoreapp3.1\WebService.DAL.csproj.CoreCompileInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netcoreapp3.1\WebService.DAL.csproj.CopyComplete
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netcoreapp3.1\WebService.DAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netcoreapp3.1\WebService.DAL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.DAL\obj\Debug\netcoreapp3.1\WebService.DAL.genruntimeconfig.cache

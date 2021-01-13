@@ -1,0 +1,14 @@
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.Oracle.DAL\bin\Debug\netstandard2.0\WebService.Oracle.DAL.deps.json
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.Oracle.DAL\bin\Debug\netstandard2.0\WebService.Oracle.DAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.Oracle.DAL\bin\Debug\netstandard2.0\WebService.Oracle.DAL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.Oracle.DAL\bin\Debug\netstandard2.0\WebService.IDAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.Oracle.DAL\bin\Debug\netstandard2.0\WebService.Model.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.Oracle.DAL\bin\Debug\netstandard2.0\WebService.IDAL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.Oracle.DAL\bin\Debug\netstandard2.0\WebService.Model.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.Oracle.DAL\obj\Debug\netstandard2.0\WebService.Oracle.DAL.csprojAssemblyReference.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.Oracle.DAL\obj\Debug\netstandard2.0\WebService.Oracle.DAL.AssemblyInfoInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.Oracle.DAL\obj\Debug\netstandard2.0\WebService.Oracle.DAL.AssemblyInfo.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.Oracle.DAL\obj\Debug\netstandard2.0\WebService.Oracle.DAL.csproj.CoreCompileInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.Oracle.DAL\obj\Debug\netstandard2.0\WebService.Oracle.DAL.csproj.CopyComplete
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.Oracle.DAL\obj\Debug\netstandard2.0\WebService.Oracle.DAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.Oracle.DAL\obj\Debug\netstandard2.0\WebService.Oracle.DAL.pdb

@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dc19d5f1-387f-44d9-864b-200139aaf5d4</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebService.BLL\WebService.BLL.csproj" />
+    <ProjectReference Include="..\WebService.DAL\WebService.DAL.csproj" />
+    <ProjectReference Include="..\WebService.IDAL\WebService.IDAL.csproj" />
+    <ProjectReference Include="..\WebService.ViewModel\WebService.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>

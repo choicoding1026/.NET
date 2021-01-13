@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+Y5Tci/OEAhURB2RjB9E8QSbLAq0UkXYwiR/Yce+T+Hg3POeU2ij+qJs/A6hYqxMpCmzwg6ZoBJkihwuOMWZXg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\iset-da\\Documents\\Visual Studio 2015\\Projects\\WebService\\WebService.ViewModel\\WebService.ViewModel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\iset-da\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

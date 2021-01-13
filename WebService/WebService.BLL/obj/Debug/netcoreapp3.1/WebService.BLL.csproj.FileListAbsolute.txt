@@ -1,0 +1,14 @@
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.BLL\bin\Debug\netcoreapp3.1\WebService.BLL.deps.json
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.BLL\bin\Debug\netcoreapp3.1\WebService.BLL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.BLL\bin\Debug\netcoreapp3.1\WebService.BLL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.BLL\bin\Debug\netcoreapp3.1\WebService.IDAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.BLL\bin\Debug\netcoreapp3.1\WebService.Model.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.BLL\bin\Debug\netcoreapp3.1\WebService.IDAL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.BLL\bin\Debug\netcoreapp3.1\WebService.Model.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.BLL\obj\Debug\netcoreapp3.1\WebService.BLL.csprojAssemblyReference.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.BLL\obj\Debug\netcoreapp3.1\WebService.BLL.AssemblyInfoInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.BLL\obj\Debug\netcoreapp3.1\WebService.BLL.AssemblyInfo.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.BLL\obj\Debug\netcoreapp3.1\WebService.BLL.csproj.CoreCompileInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.BLL\obj\Debug\netcoreapp3.1\WebService.BLL.csproj.CopyComplete
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.BLL\obj\Debug\netcoreapp3.1\WebService.BLL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.BLL\obj\Debug\netcoreapp3.1\WebService.BLL.pdb

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Nt47L4RIHd09lgLX6q1uKJ35hrz6rCOreE2Pl8o7fPWz1c2y6Ry4Nohsg5zBUcV5SQXOipnzE16ledQlUihmcQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\iset-da\\Documents\\Visual Studio 2015\\Projects\\WebService\\WebService.IDAL\\WebService.IDAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\iset-da\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

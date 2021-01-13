@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "MNJqn49i2ismM922bnimyej2eKMg1M9IFJMG+GJX0WT2OUaghdAKiuIkyZGlUlFLAc0oqdPJGw3KzziUEduP4A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\iset-da\\Documents\\Visual Studio 2015\\Projects\\WebService\\IModelDAL\\IModelDAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\iset-da\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\iset-da\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,9 @@
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.ViewModel\bin\Debug\netstandard2.0\WebService.ViewModel.deps.json
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.ViewModel\bin\Debug\netstandard2.0\WebService.ViewModel.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.ViewModel\bin\Debug\netstandard2.0\WebService.ViewModel.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.ViewModel\obj\Debug\netstandard2.0\WebService.ViewModel.csprojAssemblyReference.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.ViewModel\obj\Debug\netstandard2.0\WebService.ViewModel.AssemblyInfoInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.ViewModel\obj\Debug\netstandard2.0\WebService.ViewModel.AssemblyInfo.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.ViewModel\obj\Debug\netstandard2.0\WebService.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.ViewModel\obj\Debug\netstandard2.0\WebService.ViewModel.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\WebService\WebService.ViewModel\obj\Debug\netstandard2.0\WebService.ViewModel.pdb
