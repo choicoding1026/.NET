@@ -1,0 +1,12 @@
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\bin\Debug\netcoreapp3.1\OrderManagement.IDAL.deps.json
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\bin\Debug\netcoreapp3.1\OrderManagement.IDAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\bin\Debug\netcoreapp3.1\OrderManagement.IDAL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\bin\Debug\netcoreapp3.1\OrderManagement.Model.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\bin\Debug\netcoreapp3.1\OrderManagement.Model.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\obj\Debug\netcoreapp3.1\OrderManagement.IDAL.csprojAssemblyReference.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\obj\Debug\netcoreapp3.1\OrderManagement.IDAL.AssemblyInfoInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\obj\Debug\netcoreapp3.1\OrderManagement.IDAL.AssemblyInfo.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\obj\Debug\netcoreapp3.1\OrderManagement.IDAL.csproj.CoreCompileInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\obj\Debug\netcoreapp3.1\OrderManagement.IDAL.csproj.CopyComplete
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\obj\Debug\netcoreapp3.1\OrderManagement.IDAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\obj\Debug\netcoreapp3.1\OrderManagement.IDAL.pdb

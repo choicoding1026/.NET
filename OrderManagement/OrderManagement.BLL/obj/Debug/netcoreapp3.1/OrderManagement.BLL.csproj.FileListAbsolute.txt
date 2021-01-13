@@ -1,0 +1,14 @@
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\bin\Debug\netcoreapp3.1\OrderManagement.BLL.deps.json
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\bin\Debug\netcoreapp3.1\OrderManagement.BLL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\bin\Debug\netcoreapp3.1\OrderManagement.BLL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\bin\Debug\netcoreapp3.1\OrderManagement.IDAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\bin\Debug\netcoreapp3.1\OrderManagement.Model.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\bin\Debug\netcoreapp3.1\OrderManagement.IDAL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\bin\Debug\netcoreapp3.1\OrderManagement.Model.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\obj\Debug\netcoreapp3.1\OrderManagement.BLL.csprojAssemblyReference.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\obj\Debug\netcoreapp3.1\OrderManagement.BLL.AssemblyInfoInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\obj\Debug\netcoreapp3.1\OrderManagement.BLL.AssemblyInfo.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\obj\Debug\netcoreapp3.1\OrderManagement.BLL.csproj.CoreCompileInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\obj\Debug\netcoreapp3.1\OrderManagement.BLL.csproj.CopyComplete
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\obj\Debug\netcoreapp3.1\OrderManagement.BLL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\obj\Debug\netcoreapp3.1\OrderManagement.BLL.pdb

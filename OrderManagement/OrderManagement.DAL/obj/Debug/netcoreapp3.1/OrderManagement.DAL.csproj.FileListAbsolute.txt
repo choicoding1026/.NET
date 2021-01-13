@@ -1,0 +1,17 @@
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\bin\Debug\netcoreapp3.1\OrderManagement.DAL.deps.json
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\bin\Debug\netcoreapp3.1\OrderManagement.DAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\bin\Debug\netcoreapp3.1\OrderManagement.DAL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\bin\Debug\netcoreapp3.1\OrderManagement.IDAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\bin\Debug\netcoreapp3.1\OrderManagement.Model.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\bin\Debug\netcoreapp3.1\OrderManagement.IDAL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\bin\Debug\netcoreapp3.1\OrderManagement.Model.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\obj\Debug\netcoreapp3.1\OrderManagement.DAL.csprojAssemblyReference.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\obj\Debug\netcoreapp3.1\OrderManagement.DAL.AssemblyInfoInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\obj\Debug\netcoreapp3.1\OrderManagement.DAL.AssemblyInfo.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\obj\Debug\netcoreapp3.1\OrderManagement.DAL.csproj.CoreCompileInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\obj\Debug\netcoreapp3.1\OrderManagement.DAL.csproj.CopyComplete
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\obj\Debug\netcoreapp3.1\OrderManagement.DAL.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\obj\Debug\netcoreapp3.1\OrderManagement.DAL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\bin\Debug\netcoreapp3.1\OrderManagement.DAL.runtimeconfig.json
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\bin\Debug\netcoreapp3.1\OrderManagement.DAL.runtimeconfig.dev.json
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\obj\Debug\netcoreapp3.1\OrderManagement.DAL.genruntimeconfig.cache
