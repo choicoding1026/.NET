@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using OrderManagement.BLL;
 using OrderManagement.MVC.Models;
 using System.Diagnostics;
@@ -20,8 +21,9 @@ namespace OrderManagement.MVC.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Detail(int noticeNo)
         {
+            var notice = _noticeBll.GetNotice(noticeNo);
             return View();
         }
 

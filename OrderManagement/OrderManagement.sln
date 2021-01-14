@@ -11,17 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationLayer", "Presen
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{03774692-FE0A-4188-A977-29A6317F5EDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagement.Model", "OrderManagement.Model\OrderManagement.Model.csproj", "{39A5886B-0B69-4190-8ACE-C3D7A5A46B3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderManagement.Model", "OrderManagement.Model\OrderManagement.Model.csproj", "{39A5886B-0B69-4190-8ACE-C3D7A5A46B3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagement.IDAL", "OrderManagement.IDAL\OrderManagement.IDAL.csproj", "{564B422F-3960-4D90-8A67-A03FCD9E2196}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderManagement.IDAL", "OrderManagement.IDAL\OrderManagement.IDAL.csproj", "{564B422F-3960-4D90-8A67-A03FCD9E2196}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagement.DAL", "OrderManagement.DAL\OrderManagement.DAL.csproj", "{5C4F851E-F412-44A5-9F8F-719041D6D466}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderManagement.DAL", "OrderManagement.DAL\OrderManagement.DAL.csproj", "{5C4F851E-F412-44A5-9F8F-719041D6D466}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagement.BLL", "OrderManagement.BLL\OrderManagement.BLL.csproj", "{2B75F079-83C5-447C-AACE-CF376C11A276}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderManagement.BLL", "OrderManagement.BLL\OrderManagement.BLL.csproj", "{2B75F079-83C5-447C-AACE-CF376C11A276}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagement.MVC", "OrderManagement.MVC\OrderManagement.MVC.csproj", "{BD3A28D0-21F7-4378-B0B7-319D7DCE0BA5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagement.Identity", "OrderManagement.Identity\OrderManagement.Identity.csproj", "{DA724F49-0BC1-45A3-AF45-D2B1D423C4B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderManagement.MVC", "OrderManagement.MVC\OrderManagement.MVC.csproj", "{BD3A28D0-21F7-4378-B0B7-319D7DCE0BA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +47,6 @@ Global
 		{BD3A28D0-21F7-4378-B0B7-319D7DCE0BA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD3A28D0-21F7-4378-B0B7-319D7DCE0BA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD3A28D0-21F7-4378-B0B7-319D7DCE0BA5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA724F49-0BC1-45A3-AF45-D2B1D423C4B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA724F49-0BC1-45A3-AF45-D2B1D423C4B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA724F49-0BC1-45A3-AF45-D2B1D423C4B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA724F49-0BC1-45A3-AF45-D2B1D423C4B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,7 +57,6 @@ Global
 		{5C4F851E-F412-44A5-9F8F-719041D6D466} = {E0C87CF7-AF38-4263-87DB-FC0C9BAB0FB4}
 		{2B75F079-83C5-447C-AACE-CF376C11A276} = {8151C900-F941-4F29-BFFB-09175F8E01F6}
 		{BD3A28D0-21F7-4378-B0B7-319D7DCE0BA5} = {4E6924FF-0894-44D3-8B0A-B182DD75C182}
-		{DA724F49-0BC1-45A3-AF45-D2B1D423C4B4} = {4E6924FF-0894-44D3-8B0A-B182DD75C182}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {55889869-18B0-43D6-ACB4-0106323FDF15}
