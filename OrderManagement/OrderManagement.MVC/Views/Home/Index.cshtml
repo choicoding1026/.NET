@@ -1,8 +1,29 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+﻿<div class="text-center">
+    <h1 class="display-4">Notice</h1>
 </div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Title</th>
+            <th>ID</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var notice in Model)
+        {
+            <tr>
+                <td>@notice.NoticeNo</td>
+                <td>
+                    <a asp-controller="Home" asp-action="Detail" asp-route-noticeNo="@notice.NoticeNo">@notice.NoticeTitle</a>
+                </td>
+                <td>@notice.UserID</td>
+                <td>@notice.NoticeWriteDate</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-warning" asp-controller="Home" asp-action="Add">Add</a>

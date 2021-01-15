@@ -18,7 +18,7 @@ namespace OrderManagement.MVC.Controllers
         public IActionResult Index()
         {
             var list = _noticeBll.GetNoticeList();
-            return View();
+            return View(list);
         }
 
         public IActionResult Detail(int noticeNo)
