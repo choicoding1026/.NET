@@ -1553,7 +1553,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "OrderManagement.Model": "1.0.0"
+          "OrderManagement.Model": "1.0.0",
+          "OrderManagement.ViewModel": "1.0.0"
         },
         "compile": {
           "bin/placeholder/OrderManagement.IDAL.dll": {}
@@ -1570,6 +1571,16 @@
         },
         "runtime": {
           "bin/placeholder/OrderManagement.Model.dll": {}
+        }
+      },
+      "OrderManagement.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/OrderManagement.ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OrderManagement.ViewModel.dll": {}
         }
       }
     }
@@ -5859,6 +5870,11 @@
       "type": "project",
       "path": "../OrderManagement.Model/OrderManagement.Model.csproj",
       "msbuildProject": "../OrderManagement.Model/OrderManagement.Model.csproj"
+    },
+    "OrderManagement.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../OrderManagement.ViewModel/OrderManagement.ViewModel.csproj",
+      "msbuildProject": "../OrderManagement.ViewModel/OrderManagement.ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5868,7 +5884,8 @@
       "OrderManagement.BLL >= 1.0.0",
       "OrderManagement.DAL >= 1.0.0",
       "OrderManagement.IDAL >= 1.0.0",
-      "OrderManagement.Model >= 1.0.0"
+      "OrderManagement.Model >= 1.0.0",
+      "OrderManagement.ViewModel >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5914,6 +5931,9 @@
             },
             "C:\\Users\\iset-da\\Documents\\Visual Studio 2015\\Projects\\OrderManagement\\OrderManagement.Model\\OrderManagement.Model.csproj": {
               "projectPath": "C:\\Users\\iset-da\\Documents\\Visual Studio 2015\\Projects\\OrderManagement\\OrderManagement.Model\\OrderManagement.Model.csproj"
+            },
+            "C:\\Users\\iset-da\\Documents\\Visual Studio 2015\\Projects\\OrderManagement\\OrderManagement.ViewModel\\OrderManagement.ViewModel.csproj": {
+              "projectPath": "C:\\Users\\iset-da\\Documents\\Visual Studio 2015\\Projects\\OrderManagement\\OrderManagement.ViewModel\\OrderManagement.ViewModel.csproj"
             }
           }
         }

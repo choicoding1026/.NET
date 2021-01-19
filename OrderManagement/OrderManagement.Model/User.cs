@@ -10,7 +10,6 @@ namespace OrderManagement.Model
         /// <summary>
         /// 사용자 번호
         /// </summary>
-        [Key] // pk설정
         public int UserNo { get; set; }
 
         /// <summary>
@@ -22,6 +21,7 @@ namespace OrderManagement.Model
         /// <summary>
         /// 사용자 ID
         /// </summary>
+        [Key]
         [Required(ErrorMessage = "ID를 입력하시오.")]
         public string UserID { get; set; }
 

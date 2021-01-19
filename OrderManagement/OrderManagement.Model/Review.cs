@@ -31,13 +31,11 @@ namespace OrderManagement.Model
         /// </summary>
         public DateTime ReviewWriteTime { get; set; }
 
-        [Required]
         public string UserID { get; set; }
 
         [ForeignKey("UserID")]
         public virtual User User { get; set; }
 
-        [Required]
         public string ItemName { get; set; }
 
         [ForeignKey("ItemName")]

@@ -7,9 +7,9 @@ namespace OrderManagement.Model
 {
     public class Item
     {
-        [Key]
         public int ItemNo { get; set; }
 
+        [Key]
         public string ItemName { get; set; }
 
         public int Price { get; set; }

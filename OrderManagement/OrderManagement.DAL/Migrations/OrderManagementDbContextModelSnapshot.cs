@@ -37,9 +37,58 @@ namespace OrderManagement.DAL.Migrations
                     b.Property<DateTime>("NoticeWriteTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("UserID")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("NoticeNo");
 
+                    b.HasIndex("UserID");
+
                     b.ToTable("Notices");
+                });
+
+            modelBuilder.Entity("OrderManagement.Model.User", b =>
+                {
+                    b.Property<string>("UserID")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("Money")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("SignUpDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserNo")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserPW")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserPhone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserID");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("OrderManagement.Model.Notice", b =>
+                {
+                    b.HasOne("OrderManagement.Model.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID");
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

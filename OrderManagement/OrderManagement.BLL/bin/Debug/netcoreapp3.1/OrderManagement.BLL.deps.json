@@ -16,7 +16,8 @@
       },
       "OrderManagement.IDAL/1.0.0": {
         "dependencies": {
-          "OrderManagement.Model": "1.0.0"
+          "OrderManagement.Model": "1.0.0",
+          "OrderManagement.ViewModel": "1.0.0"
         },
         "runtime": {
           "OrderManagement.IDAL.dll": {}
@@ -25,6 +26,11 @@
       "OrderManagement.Model/1.0.0": {
         "runtime": {
           "OrderManagement.Model.dll": {}
+        }
+      },
+      "OrderManagement.ViewModel/1.0.0": {
+        "runtime": {
+          "OrderManagement.ViewModel.dll": {}
         }
       }
     }
@@ -41,6 +47,11 @@
       "sha512": ""
     },
     "OrderManagement.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OrderManagement.ViewModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,9 @@
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.ViewModel\bin\Debug\netcoreapp3.1\OrderManagement.ViewModel.deps.json
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.ViewModel\bin\Debug\netcoreapp3.1\OrderManagement.ViewModel.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.ViewModel\bin\Debug\netcoreapp3.1\OrderManagement.ViewModel.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.ViewModel\obj\Debug\netcoreapp3.1\OrderManagement.ViewModel.csprojAssemblyReference.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.ViewModel\obj\Debug\netcoreapp3.1\OrderManagement.ViewModel.AssemblyInfoInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.ViewModel\obj\Debug\netcoreapp3.1\OrderManagement.ViewModel.AssemblyInfo.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.ViewModel\obj\Debug\netcoreapp3.1\OrderManagement.ViewModel.csproj.CoreCompileInputs.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.ViewModel\obj\Debug\netcoreapp3.1\OrderManagement.ViewModel.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.ViewModel\obj\Debug\netcoreapp3.1\OrderManagement.ViewModel.pdb

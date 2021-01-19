@@ -18,6 +18,8 @@ namespace OrderManagement.DAL.DataContext
 
         public DbSet<Notice> Notices { get; set; }
 
+        public DbSet<User> Users { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(_configuration.GetConnectionString("LocalDbConnection"));

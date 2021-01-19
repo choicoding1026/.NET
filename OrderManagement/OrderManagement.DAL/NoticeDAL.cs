@@ -28,12 +28,27 @@ namespace OrderManagement.DAL
 
         public Notice GetNotice(int noticeNo)
         {
-            throw new NotImplementedException();
+            using (var db = new OrderManagementDbContext(_configuration))
+            {
+                return db.Notices
+                    .FirstOrDefault(n => n.NoticeNo.Equals(noticeNo));
+            }
         }
 
         public bool PostNotice(Notice notice)
         {
-            throw new NotImplementedException();
+            using(var db = new OrderManagementDbContext(_configuration))
+            {
+                db.Notices.Add(notice);
+                if (db. SaveChanges() > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
         }
 
         public bool UpdateNotice(Notice notice)

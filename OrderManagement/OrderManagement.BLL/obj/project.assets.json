@@ -6,7 +6,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "OrderManagement.Model": "1.0.0"
+          "OrderManagement.Model": "1.0.0",
+          "OrderManagement.ViewModel": "1.0.0"
         },
         "compile": {
           "bin/placeholder/OrderManagement.IDAL.dll": {}
@@ -24,6 +25,16 @@
         "runtime": {
           "bin/placeholder/OrderManagement.Model.dll": {}
         }
+      },
+      "OrderManagement.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/OrderManagement.ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OrderManagement.ViewModel.dll": {}
+        }
       }
     }
   },
@@ -37,6 +48,11 @@
       "type": "project",
       "path": "../OrderManagement.Model/OrderManagement.Model.csproj",
       "msbuildProject": "../OrderManagement.Model/OrderManagement.Model.csproj"
+    },
+    "OrderManagement.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../OrderManagement.ViewModel/OrderManagement.ViewModel.csproj",
+      "msbuildProject": "../OrderManagement.ViewModel/OrderManagement.ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {

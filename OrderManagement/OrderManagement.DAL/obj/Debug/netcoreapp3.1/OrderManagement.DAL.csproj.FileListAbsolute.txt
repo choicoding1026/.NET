@@ -15,3 +15,5 @@ C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderMana
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\bin\Debug\netcoreapp3.1\OrderManagement.DAL.runtimeconfig.json
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\bin\Debug\netcoreapp3.1\OrderManagement.DAL.runtimeconfig.dev.json
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\obj\Debug\netcoreapp3.1\OrderManagement.DAL.genruntimeconfig.cache
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\bin\Debug\netcoreapp3.1\OrderManagement.ViewModel.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.DAL\bin\Debug\netcoreapp3.1\OrderManagement.ViewModel.pdb

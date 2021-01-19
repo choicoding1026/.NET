@@ -12,3 +12,5 @@ C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderMana
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\obj\Debug\netcoreapp3.1\OrderManagement.BLL.csproj.CopyComplete
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\obj\Debug\netcoreapp3.1\OrderManagement.BLL.dll
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\obj\Debug\netcoreapp3.1\OrderManagement.BLL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\bin\Debug\netcoreapp3.1\OrderManagement.ViewModel.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.BLL\bin\Debug\netcoreapp3.1\OrderManagement.ViewModel.pdb

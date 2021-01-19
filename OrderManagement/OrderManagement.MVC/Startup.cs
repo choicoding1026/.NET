@@ -29,9 +29,13 @@ namespace OrderManagement.MVC
             services.AddSingleton<IConfiguration>(Configuration);
 
             services.AddTransient<NoticeBLL>();
+            services.AddTransient<UserBLL>();
+           
             services.AddTransient<INoticeDAL, NoticeDAL>();
+            services.AddTransient<IUserDAL, UserDAL>();
             
             services.AddControllersWithViews();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +54,7 @@ namespace OrderManagement.MVC
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();

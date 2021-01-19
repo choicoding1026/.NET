@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace OrderManagement.Model
 {
@@ -27,5 +28,10 @@ namespace OrderManagement.Model
          /// 공지사항 작성 날짜
          /// </summary>
          public DateTime NoticeWriteTime { get; set; }
+
+         public string UserID { get; set; }
+
+         [ForeignKey("UserID")]
+         public virtual User User { get; set; }
     }
 }

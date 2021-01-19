@@ -8,7 +8,6 @@
             <th>No</th>
             <th>Title</th>
             <th>ID</th>
-            <th>Date</th>
         </tr>
     </thead>
     <tbody>
@@ -20,7 +19,6 @@
                     <a asp-controller="Home" asp-action="Detail" asp-route-noticeNo="@notice.NoticeNo">@notice.NoticeTitle</a>
                 </td>
                 <td>@notice.UserID</td>
-                <td>@notice.NoticeWriteDate</td>
             </tr>
         }
     </tbody>

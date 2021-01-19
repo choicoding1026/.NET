@@ -17,6 +17,7 @@
     <ProjectReference Include="..\OrderManagement.DAL\OrderManagement.DAL.csproj" />
     <ProjectReference Include="..\OrderManagement.IDAL\OrderManagement.IDAL.csproj" />
     <ProjectReference Include="..\OrderManagement.Model\OrderManagement.Model.csproj" />
+    <ProjectReference Include="..\OrderManagement.ViewModel\OrderManagement.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>

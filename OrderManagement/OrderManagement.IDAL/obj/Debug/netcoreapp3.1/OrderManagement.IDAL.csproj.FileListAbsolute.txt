@@ -10,3 +10,5 @@ C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderMana
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\obj\Debug\netcoreapp3.1\OrderManagement.IDAL.csproj.CopyComplete
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\obj\Debug\netcoreapp3.1\OrderManagement.IDAL.dll
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\obj\Debug\netcoreapp3.1\OrderManagement.IDAL.pdb
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\bin\Debug\netcoreapp3.1\OrderManagement.ViewModel.dll
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.IDAL\bin\Debug\netcoreapp3.1\OrderManagement.ViewModel.pdb
