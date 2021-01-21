@@ -59,8 +59,6 @@ namespace OrderManagement.MVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                user.Money = 1000000;
-                user.SignUpDate = DateTime.Now;
                 _userBll.Signup(user);
             }
             return RedirectToAction("Index", "Home");

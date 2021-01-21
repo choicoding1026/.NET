@@ -6,32 +6,36 @@ namespace OrderManagement.Model
 {
     public class Notice
     {
-         /// <summary>
-         /// 공지사항 번호
-         /// </summary>
-         [Key]
-         public int NoticeNo { get; set; }
-         
-         /// <summary>
-         /// 공지사항 제목
-         /// </summary>
-         [Required(ErrorMessage = "제목을 입력하세요.")]
-         public string NoticeTitle { get; set; }
-         
-         /// <summary>
-         /// 공지사항 내용
-         /// </summary>
-         [Required(ErrorMessage = "내용을 입력하세요.")]
-         public string NoticeContents { get; set; }
-         
-         /// <summary>
-         /// 공지사항 작성 날짜
-         /// </summary>
-         public DateTime NoticeWriteTime { get; set; }
+        /// <summary>
+        /// 공지사항 번호
+        /// </summary>
+        [Key]
+        public int NoticeNo { get; set; }
 
-         public string UserID { get; set; }
+        /// <summary>
+        /// 공지사항 제목
+        /// </summary>
+        [Required(ErrorMessage = "제목을 입력하세요.")]
+        public string NoticeTitle { get; set; }
 
-         [ForeignKey("UserID")]
-         public virtual User User { get; set; }
-    }
+        /// <summary>
+        /// 공지사항 내용
+        /// </summary>
+        [Required(ErrorMessage = "내용을 입력하세요.")]
+        public string NoticeContents { get; set; }
+
+        /// <summary>
+        /// 공지사항 작성 날짜
+        /// </summary>
+        public DateTime NoticeWriteTime { get; set; }
+
+        public string UserID { get; set; }
+
+        public int UserNo { get; set; }
+
+        [ForeignKey("UserNo")]
+        public virtual User User { get; set; }
+        
+
+    }    
 }

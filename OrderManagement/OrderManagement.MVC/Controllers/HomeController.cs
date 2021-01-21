@@ -17,15 +17,13 @@ namespace OrderManagement.MVC.Controllers
 
         public IActionResult Index()
         {
-            var message = HttpContext.Session.GetString("USER_LOGIN_KEY");
-            Console.WriteLine(message);
             var list = _noticeBll.GetNoticeList();
             return View(list);
         }
 
         public IActionResult Detail(int noticeNo)
         {
-            if (HttpContext.Session.GetString("USER_LOGIN_KEY") != null)
+            if (HttpContext.Session.GetString("USER_LOGIN_KEY") != "admin")
             {
                 return RedirectToAction("Signin", "Account");
             }
@@ -36,7 +34,7 @@ namespace OrderManagement.MVC.Controllers
 
         public IActionResult Add()
         {
-            if (HttpContext.Session.GetString("USER_LOGIN_KEY") == null)
+            if (HttpContext.Session.GetString("USER_LOGIN_KEY") != "admin")
             {
                 return RedirectToAction("Signin", "Account");
             }
@@ -47,7 +45,7 @@ namespace OrderManagement.MVC.Controllers
         [HttpPost]
         public IActionResult Add(Notice notice)
         {
-            if (HttpContext.Session.GetString("USER_LOGIN_KEY") == null)
+            if (HttpContext.Session.GetString("USER_LOGIN_KEY") != "admin")
             {
                 return RedirectToAction("Signin", "Account");
             }
@@ -55,6 +53,8 @@ namespace OrderManagement.MVC.Controllers
             if (ModelState.IsValid)
             {
                 notice.NoticeWriteTime = DateTime.Now;
+                notice.UserID = HttpContext.Session.GetString("USER_LOGIN_KEY");
+
                 bool result = _noticeBll.PostNotice(notice);
                 if (result == true)
                 {
@@ -62,7 +62,7 @@ namespace OrderManagement.MVC.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "회원가입에 실패했습니다.");
+                    ModelState.AddModelError(string.Empty, "공지사항 등록에 실패했습니다.");
                 }
             }
             ModelState.AddModelError(string.Empty, "필수 항목을 입력해주세요.");
@@ -71,7 +71,7 @@ namespace OrderManagement.MVC.Controllers
 
         public IActionResult Edit()
         {
-            if (HttpContext.Session.GetString("USER_LOGIN_KEY") == null)
+            if (HttpContext.Session.GetString("USER_LOGIN_KEY") != "admin")
             {
                 return RedirectToAction("Signin", "Account");
             }
@@ -81,7 +81,7 @@ namespace OrderManagement.MVC.Controllers
 
         public IActionResult Delete()
         {
-            if (HttpContext.Session.GetString("USER_LOGIN_KEY") == null)
+            if (HttpContext.Session.GetString("USER_LOGIN_KEY") != "admin")
             {
                 return RedirectToAction("Signin", "Account");
             }

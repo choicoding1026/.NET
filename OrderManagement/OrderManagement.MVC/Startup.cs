@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -8,9 +7,6 @@ using OrderManagement.BLL;
 using OrderManagement.DAL;
 using OrderManagement.IDAL;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace OrderManagement.MVC
 {
@@ -30,9 +26,15 @@ namespace OrderManagement.MVC
 
             services.AddTransient<NoticeBLL>();
             services.AddTransient<UserBLL>();
+            services.AddTransient<ItemBLL>();
+            services.AddTransient<CategoryBLL>();
+            services.AddTransient<ReviewBLL>();
            
             services.AddTransient<INoticeDAL, NoticeDAL>();
             services.AddTransient<IUserDAL, UserDAL>();
+            services.AddTransient<IItemDAL, ItemDAL>();
+            services.AddTransient<ICategoryDAL, CategoryDAL>();
+            services.AddTransient<IReviewDAL, ReviewDAL>();
             
             services.AddControllersWithViews();
             services.AddSession();

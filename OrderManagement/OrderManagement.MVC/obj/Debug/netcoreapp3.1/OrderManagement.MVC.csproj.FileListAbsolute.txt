@@ -91,3 +91,13 @@ C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderMana
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Account\Signup.cshtml.g.cs
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Detail.cshtml.g.cs
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Edit.cshtml.g.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Category\Add.cshtml.g.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Category\Index.cshtml.g.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Item\Add.cshtml.g.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Item\Index.cshtml.g.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Order\Add.cshtml.g.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Order\Index.cshtml.g.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Review\Index.cshtml.g.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Review\Detail.cshtml.g.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Review\Add.cshtml.g.cs

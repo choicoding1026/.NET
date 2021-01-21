@@ -19,6 +19,49 @@ namespace OrderManagement.DAL.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.2");
 
+            modelBuilder.Entity("OrderManagement.Model.Category", b =>
+                {
+                    b.Property<int>("CateNo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("CateName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CateNo");
+
+                    b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("OrderManagement.Model.Item", b =>
+                {
+                    b.Property<int>("ItemNo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Cate")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ItemID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ItemName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
+
+                    b.HasKey("ItemNo");
+
+                    b.ToTable("Items");
+                });
+
             modelBuilder.Entity("OrderManagement.Model.Notice", b =>
                 {
                     b.Property<int>("NoticeNo")
@@ -38,19 +81,63 @@ namespace OrderManagement.DAL.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UserID")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserNo")
+                        .HasColumnType("int");
 
                     b.HasKey("NoticeNo");
 
-                    b.HasIndex("UserID");
+                    b.HasIndex("UserNo");
 
                     b.ToTable("Notices");
                 });
 
+            modelBuilder.Entity("OrderManagement.Model.Review", b =>
+                {
+                    b.Property<int>("ReviewNo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("ItemName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ItemNo")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ReviewContents")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReviewTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ReviewWriteTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserID")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserNo")
+                        .HasColumnType("int");
+
+                    b.HasKey("ReviewNo");
+
+                    b.HasIndex("ItemNo");
+
+                    b.HasIndex("UserNo");
+
+                    b.ToTable("Reviews");
+                });
+
             modelBuilder.Entity("OrderManagement.Model.User", b =>
                 {
-                    b.Property<string>("UserID")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("UserNo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<int>("Money")
                         .HasColumnType("int");
@@ -62,12 +149,13 @@ namespace OrderManagement.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserName")
+                    b.Property<string>("UserID")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserNo")
-                        .HasColumnType("int");
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserPW")
                         .IsRequired()
@@ -77,7 +165,7 @@ namespace OrderManagement.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("UserID");
+                    b.HasKey("UserNo");
 
                     b.ToTable("Users");
                 });
@@ -86,7 +174,28 @@ namespace OrderManagement.DAL.Migrations
                 {
                     b.HasOne("OrderManagement.Model.User", "User")
                         .WithMany()
-                        .HasForeignKey("UserID");
+                        .HasForeignKey("UserNo")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("OrderManagement.Model.Review", b =>
+                {
+                    b.HasOne("OrderManagement.Model.Item", "Item")
+                        .WithMany()
+                        .HasForeignKey("ItemNo")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OrderManagement.Model.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserNo")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Item");
 
                     b.Navigation("User");
                 });

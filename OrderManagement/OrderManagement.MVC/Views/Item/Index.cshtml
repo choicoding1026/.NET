@@ -1,0 +1,25 @@
+﻿<div class="text-center">
+    <h1 class="display-4">Item</h1>
+</div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Cate</th>
+            <th>ProductName</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.ItemID</td>
+            <td>@item.Cate</td>
+            <td>@item.ItemName</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-warning" asp-controller="Item" asp-action="Add">Add</a>

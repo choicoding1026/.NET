@@ -33,12 +33,16 @@ namespace OrderManagement.Model
 
         public string UserID { get; set; }
 
-        [ForeignKey("UserID")]
+        public int UserNo { get; set; }
+        
+        [ForeignKey("UserNo")]
         public virtual User User { get; set; }
 
-        public string ItemName { get; set; }
+        public int ItemNo { get; set; }
 
-        [ForeignKey("ItemName")]
+        [ForeignKey("ItemNo")]
         public virtual Item Item { get; set; }
+
+        public string ItemName { get; set; }
     }
 }

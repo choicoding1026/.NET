@@ -20,4 +20,8 @@
     <ProjectReference Include="..\OrderManagement.ViewModel\OrderManagement.ViewModel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\upload\" />
+  </ItemGroup>
+
 </Project>

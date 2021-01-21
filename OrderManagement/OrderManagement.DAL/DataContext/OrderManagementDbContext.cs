@@ -20,6 +20,12 @@ namespace OrderManagement.DAL.DataContext
 
         public DbSet<User> Users { get; set; }
 
+        public DbSet<Item> Items { get; set; }
+
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Review> Reviews { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(_configuration.GetConnectionString("LocalDbConnection"));

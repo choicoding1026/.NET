@@ -1,0 +1,27 @@
+﻿<div class="text-center">
+    <h1 class="display-4">Review</h1>
+</div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Title</th>
+            <th>ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var review in Model)
+        {
+            <tr>
+                <td>@review.ReviewNo</td>
+                <td>
+                    <a asp-controller="Review" asp-action="Detail" asp-route-noticeNo="@review.ReviewNo">@review.ReviewTitle</a>
+                </td>
+                <td>@review.UserID</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-warning" asp-controller="Review" asp-action="Add">Add</a>

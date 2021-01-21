@@ -1,0 +1,25 @@
+﻿@model OrderManagement.Model.Review
+
+<div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <form class="form-horizontal" method="post" asp-controller="Review" asp-action="Add">
+            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" asp-for="ReviewTitle" placeholder="제목 입력" />
+                <span class="text-danger" asp-validation-for="ReviewTitle"></span>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="editor" asp-for="ReviewContents" placeholder="내용 입력" rows="20"></textarea>
+                <span class="text-danger" asp-validation-for="ReviewContents"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">등록</button>
+                <a class="btn btn-default" asp-controller="Review" asp-action="Index">취소</a>
+            </div>
+        </form>
+    </div>
+    <div class="col-lg-4"></div>
+
+</div>

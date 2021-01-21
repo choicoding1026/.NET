@@ -24,7 +24,7 @@ namespace OrderManagement.DAL
             using (var db = new OrderManagementDbContext(_configuraton))
             {
                 return db.Users
-                    .OrderByDescending(n => n.UserNo)
+                    .OrderByDescending(n => n.UserName)
                     .ToList();
             }
         }
@@ -34,16 +34,28 @@ namespace OrderManagement.DAL
             using (var db = new OrderManagementDbContext(_configuraton))
             {
                 return db.Users
-                    .FirstOrDefault(n => n.UserNo.Equals(userNo));
+                    .FirstOrDefault(n => n.UserID.Equals(userNo));
             }
         }
 
         public bool Signup(User user)
         {
-            using (var db= new OrderManagementDbContext(_configuraton))
+            try
             {
-                db.Users.Add(user);
-                return true;
+                using (var db = new OrderManagementDbContext(_configuraton))
+                {
+                    user.Money = 1000000;
+                    user.SignUpDate = DateTime.Now;
+
+                    db.Users.Add(user);
+                    db.SaveChanges();
+
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
             }
         }
 

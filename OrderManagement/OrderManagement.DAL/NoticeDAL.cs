@@ -1,9 +1,11 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using OrderManagement.DAL.DataContext;
 using OrderManagement.IDAL;
 using OrderManagement.Model;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace OrderManagement.DAL
@@ -19,7 +21,7 @@ namespace OrderManagement.DAL
         public List<Notice> GetNoticeList()
         {
             using (var db = new OrderManagementDbContext(_configuration))
-            {
+            { 
                 return db.Notices
                     .OrderByDescending(n=>n.NoticeNo)
                     .ToList();
@@ -37,17 +39,21 @@ namespace OrderManagement.DAL
 
         public bool PostNotice(Notice notice)
         {
-            using(var db = new OrderManagementDbContext(_configuration))
+            try
             {
-                db.Notices.Add(notice);
-                if (db. SaveChanges() > 0)
+                using (var db = new OrderManagementDbContext(_configuration))
                 {
+                    notice.UserNo = db.Users.Single(u => u.UserID == notice.UserID).UserNo;
+
+                    db.Notices.Add(notice);
+                    db.SaveChanges();
+
                     return true;
                 }
-                else
-                {
-                    return false;
-                }
+            }
+            catch
+            {
+                return false;
             }
         }
 
