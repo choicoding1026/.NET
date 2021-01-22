@@ -41,8 +41,10 @@ namespace OrderManagement.MVC.Controllers
             {
                 return Redirect("Index");
             }
-            
-            
+
+            var category = _itemBll.GetCategories();
+            ViewBag.cateList = category;
+
             return View();
         }
 
@@ -53,8 +55,6 @@ namespace OrderManagement.MVC.Controllers
             {
                 return Redirect("Index");
             }
-            var category = _itemBll.GetCategories();
-            ViewBag.cateList = category;
 
             if (ModelState.IsValid)
             {

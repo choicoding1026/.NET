@@ -20,6 +20,11 @@ namespace OrderManagement.BLL
             return _orderDal.GetOrderList();
         }
 
+        public List<Item> GetItems()
+        {
+            return _orderDal.GetItems();
+        }
+
         public Order GetOrder(int orderNo)
         {
             return _orderDal.GetOrder(orderNo);

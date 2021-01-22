@@ -9,6 +9,8 @@ namespace OrderManagement.IDAL
     {
         List<Order> GetOrderList();
 
+        List<Item> GetItems();
+
         Order GetOrder(int orderNo);
 
         bool PostOrder(Order order);

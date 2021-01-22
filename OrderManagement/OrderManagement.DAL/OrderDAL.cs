@@ -13,6 +13,11 @@ namespace OrderManagement.DAL
             throw new NotImplementedException();
         }
 
+        public List<Item> GetItems()
+        {
+            throw new NotImplementedException();
+        }
+
         public Order GetOrder(int orderNo)
         {
             throw new NotImplementedException();

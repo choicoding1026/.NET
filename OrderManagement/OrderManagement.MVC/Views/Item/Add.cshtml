@@ -3,16 +3,19 @@
 <h2>상품등록</h2>
 
 <form class="form-horizontal" method="post" asp-controller="Item" asp-action="Add">
-    <div class="form-group">
-        <div class="form-control">
-            <label>카테고리</label>
-            <select asp-for="Cate" asp-items="@(new SelectList(@ViewBag.cateList, "CateNo", "CateName"))"></select>
-            <span class="form-control" asp-validation-for="Cate"></span>
+    <div class="row">
+        <div class="alert-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <label asp-for="Cate" class="control-label">카테고리</label>
+            <select asp-for="Cate"
+                    class="form-control"
+                    asp-items="@(new SelectList(@ViewBag.cateList, "CateNo", "CateName"))">
+            </select>
         </div>
     </div>
 
     <div class="form-group">
-        <label>상품등록번호</label>
+        <label>상품코드</label>
         <input type="text" class="form-control" asp-for="ItemID" placeholder="상품 등록번호를 입력하시오" />
         <span class="text-danger" asp-validation-for="ItemID"></span>
     </div>
