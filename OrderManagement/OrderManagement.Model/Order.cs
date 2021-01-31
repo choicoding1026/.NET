@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace OrderManagement.Model
 {
@@ -22,8 +20,6 @@ namespace OrderManagement.Model
 
         public string Phone { get; set; }
 
-        public string Product { get; set; }
-
         public string ItemID { get; set; }
 
         public int ItemNo { get; set; }
@@ -31,6 +27,10 @@ namespace OrderManagement.Model
         [ForeignKey("ItemNo")]
         public virtual Item Item { get; set; }
 
-        public string Amount { get; set; }
+        public string OrderQuantity { get; set; }
+
+        public DateTime OrderDate { get; set; }
+
+        public string OrderCode {get; set;}
     }
 }

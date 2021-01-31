@@ -1,0 +1,27 @@
+﻿<div class="text-center">
+    <h1 class="display-4">Cart</h1>
+</div>
+<form method="post">
+    <table class="table table-borderless" width="50">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewBag.cartList)
+            {
+                <tr>
+                    <td>@item.Product.ItemName</td>
+                    <td>@item.Quantity</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
+
+<div class="panel-footer text-right">
+    <a class="btn btn-primary" asp-controller="Order" asp-action="Index">More Order</a>
+    <a class="btn btn-primary" asp-controller="Order" asp-action="Pay">Pay</a>
+</div>

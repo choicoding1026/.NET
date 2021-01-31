@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "OrderManagement.ViewModel/1.0.0": {
+        "dependencies": {
+          "OrderManagement.Model": "1.0.0"
+        },
         "runtime": {
           "OrderManagement.ViewModel.dll": {}
+        }
+      },
+      "OrderManagement.Model/1.0.0": {
+        "runtime": {
+          "OrderManagement.Model.dll": {}
         }
       }
     }
   },
   "libraries": {
     "OrderManagement.ViewModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OrderManagement.Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -22,7 +22,7 @@ namespace OrderManagement.DAL
             using (var db = new OrderManagementDbContext(_configuration))
             {
                 return db.Items
-                    .OrderByDescending(n => n.ItemID)
+                    .OrderByDescending(n => n.ItemNo)
                     .ToList();
             }
         }
@@ -42,7 +42,7 @@ namespace OrderManagement.DAL
             using (var db = new OrderManagementDbContext(_configuration))
             {
                 return db.Items
-                    .FirstOrDefault(n => n.ItemID.Equals(itemNo));
+                    .FirstOrDefault(n => n.ItemNo.Equals(itemNo));
             }
         }
 

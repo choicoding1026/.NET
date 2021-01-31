@@ -17,6 +17,9 @@ namespace OrderManagement.Model
         public int Price { get; set; }
 
         [Required]
+        public int Quantity { get; set; }
+
+        [Required]
         public string Cate { get; set; }
     }
 }

@@ -95,10 +95,11 @@ C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderMana
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Category\Index.cshtml.g.cs
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Item\Add.cshtml.g.cs
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Item\Index.cshtml.g.cs
-C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Order\Add.cshtml.g.cs
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Order\Index.cshtml.g.cs
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Review\Index.cshtml.g.cs
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Review\Detail.cshtml.g.cs
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Review\Add.cshtml.g.cs
-C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Order\Cart.cshtml.g.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Order\Management.cshtml.g.cs
+C:\Users\iset-da\Documents\Visual Studio 2015\Projects\OrderManagement\OrderManagement.MVC\obj\Debug\netcoreapp3.1\Razor\Views\Order\Pay.cshtml.g.cs

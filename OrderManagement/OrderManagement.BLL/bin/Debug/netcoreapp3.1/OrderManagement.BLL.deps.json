@@ -29,6 +29,9 @@
         }
       },
       "OrderManagement.ViewModel/1.0.0": {
+        "dependencies": {
+          "OrderManagement.Model": "1.0.0"
+        },
         "runtime": {
           "OrderManagement.ViewModel.dll": {}
         }

@@ -9,7 +9,7 @@
             <label asp-for="Cate" class="control-label">카테고리</label>
             <select asp-for="Cate"
                     class="form-control"
-                    asp-items="@(new SelectList(@ViewBag.cateList, "CateNo", "CateName"))">
+                    asp-items="@(new SelectList(@ViewBag.cateList, "CateName", "CateName"))">
             </select>
         </div>
     </div>
@@ -28,8 +28,14 @@
 
     <div class="form-group">
         <label>판매가</label>
-        <input type="text" class="form-control" asp-for="Price" placeholder="이름을 입력하시오" />
+        <input type="text" class="form-control" asp-for="Price" placeholder="가격을 입력하시오" />
         <span class="text-danger" asp-validation-for="Price"></span>
+    </div>
+
+    <div class="form-group">
+        <label>수량</label>
+        <input type="text" class="form-control" asp-for="Quantity" placeholder="수량을 입력하시오" />
+        <span class="text-danger" asp-validation-for="Quantity"></span>
     </div>
 
     <div class="form-group">

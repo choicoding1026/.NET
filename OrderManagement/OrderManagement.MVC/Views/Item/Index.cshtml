@@ -8,6 +8,7 @@
             <th>Code</th>
             <th>Cate</th>
             <th>ProductName</th>
+            <th>Quantity</th>
         </tr>
     </thead>
     <tbody>
@@ -17,9 +18,10 @@
             <td>@item.ItemID</td>
             <td>@item.Cate</td>
             <td>@item.ItemName</td>
+            <td>@item.Quantity</td>
         </tr>
         }
     </tbody>
 </table>
 
-<a class="btn btn-warning" asp-controller="Item" asp-action="Add">Add</a>
+<a class="btn btn-warning" asp-controller="Item" asp-action="Add">상품등록</a>

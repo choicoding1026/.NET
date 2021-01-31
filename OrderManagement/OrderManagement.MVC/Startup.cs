@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -29,12 +30,14 @@ namespace OrderManagement.MVC
             services.AddTransient<ItemBLL>();
             services.AddTransient<CategoryBLL>();
             services.AddTransient<ReviewBLL>();
+            services.AddTransient<OrderBLL>();
            
             services.AddTransient<INoticeDAL, NoticeDAL>();
             services.AddTransient<IUserDAL, UserDAL>();
             services.AddTransient<IItemDAL, ItemDAL>();
             services.AddTransient<ICategoryDAL, CategoryDAL>();
             services.AddTransient<IReviewDAL, ReviewDAL>();
+            services.AddTransient<IOrderDAL, OrderDAL>();
             
             services.AddControllersWithViews();
             services.AddSession();

@@ -1,4 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Http
+@using OrderManagement.ViewModel
+@using OrderManagement.MVC.Helpers
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +11,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/lib/Trumbowyg/ui/trumbowyg.min.css" />
     <link rel="stylesheet" href="~/lib/Trumbowyg/langs/ko.js" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
@@ -33,9 +36,15 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="Index">Category</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Order" asp-action="Management">Management</a>
+                            </li>
                         }
                         else
                         {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Order" asp-action="Index">Order</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Review" asp-action="Index">Review</a>
                             </li>
@@ -45,16 +54,16 @@
                         @if (Context.Session.GetString("USER_LOGIN_KEY") == null)
                         {
                             <li>
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Signin">Signin</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Signin">Sign in</a>
                             </li>
                             <li>
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Signup">Signup</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Signup">Sign up</a>
                             </li>
                         }
                         else
                         {
                             <li>
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Signout">Signout</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Signout">Sign out</a>
                             </li>
                         }
                     </ul>
@@ -69,10 +78,14 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - OrderManagement.MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <div class="row">
+            <div class="col-md-8 copyright">
+                <div class="col-md-6 col-sm-6 copyright-left">
+                    <p>&copy; @DateTime.Now.Year - OrderManagement. All right reserved.</p>
+                </div>
+            </div>
         </div>
-    </footer>
+</footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/lib/Trumbowyg/trumbowyg.min.js"></script>

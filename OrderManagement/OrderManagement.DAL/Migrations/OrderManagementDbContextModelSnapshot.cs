@@ -57,6 +57,9 @@ namespace OrderManagement.DAL.Migrations
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
                     b.HasKey("ItemNo");
 
                     b.ToTable("Items");
@@ -91,6 +94,49 @@ namespace OrderManagement.DAL.Migrations
                     b.HasIndex("UserNo");
 
                     b.ToTable("Notices");
+                });
+
+            modelBuilder.Entity("OrderManagement.Model.Order", b =>
+                {
+                    b.Property<int>("OrderNo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ItemID")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ItemNo")
+                        .HasColumnType("int");
+
+                    b.Property<string>("OrderCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("OrderDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("OrderQuantity")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserID")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserNo")
+                        .HasColumnType("int");
+
+                    b.HasKey("OrderNo");
+
+                    b.HasIndex("ItemNo");
+
+                    b.HasIndex("UserNo");
+
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("OrderManagement.Model.Review", b =>
@@ -177,6 +223,25 @@ namespace OrderManagement.DAL.Migrations
                         .HasForeignKey("UserNo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("OrderManagement.Model.Order", b =>
+                {
+                    b.HasOne("OrderManagement.Model.Item", "Item")
+                        .WithMany()
+                        .HasForeignKey("ItemNo")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OrderManagement.Model.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserNo")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Item");
 
                     b.Navigation("User");
                 });

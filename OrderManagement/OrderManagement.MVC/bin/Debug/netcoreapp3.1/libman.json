@@ -5,6 +5,10 @@
     {
       "library": "Trumbowyg@2.23.0",
       "destination": "wwwroot/Trumbowyg/"
+    },
+    {
+      "library": "font-awesome@5.15.2",
+      "destination": "wwwroot/lib/font-awesome/"
     }
   ]
 }

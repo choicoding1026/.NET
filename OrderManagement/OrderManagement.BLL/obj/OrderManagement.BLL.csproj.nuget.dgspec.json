@@ -216,7 +216,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\iset-da\\Documents\\Visual Studio 2015\\Projects\\OrderManagement\\OrderManagement.Model\\OrderManagement.Model.csproj": {
+                "projectPath": "C:\\Users\\iset-da\\Documents\\Visual Studio 2015\\Projects\\OrderManagement\\OrderManagement.Model\\OrderManagement.Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

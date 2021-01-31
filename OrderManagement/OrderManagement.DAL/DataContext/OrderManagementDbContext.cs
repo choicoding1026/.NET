@@ -26,6 +26,8 @@ namespace OrderManagement.DAL.DataContext
 
         public DbSet<Review> Reviews { get; set; }
 
+        public DbSet<Order> Orders { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(_configuration.GetConnectionString("LocalDbConnection"));

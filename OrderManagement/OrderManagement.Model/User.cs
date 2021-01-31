@@ -21,6 +21,7 @@ namespace OrderManagement.Model
         /// 사용자 PW
         /// </summary>
         [Required(ErrorMessage = "비밀번호를 입력하시오.")]
+        [DataType(DataType.Password)]
         public string UserPW { get; set; }
 
         /// <summary>
@@ -33,6 +34,7 @@ namespace OrderManagement.Model
         /// 사용자 전화번호
         /// </summary>
         [Required(ErrorMessage = "전화번호를 입력하시오.")]
+        [Phone]
         public string UserPhone { get; set; }
 
         /// <summary>
